@@ -421,7 +421,10 @@ def dump_publik():
 		exit()
 	except (KeyError,IOError):
 		print(f'[🎮] teman tidak publik')
-		exit()def dump_massal():
+		exit()
+def dump_massal():
+	os.system('clear')
+	banner()
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
