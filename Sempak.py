@@ -283,11 +283,10 @@ def folderdata():
     except:pass
     try:os.mkdir("OK")
     except:pass
-### BANNER OR LOGO ###
+    ###----------[ BANNER MENUH ]----------###
 def banner():
-    os.system('cls' if os.name == 'nt' else 'clear') # Coded by Rozhak
-    Console(width=100, style="bold hot_pink2").print(Panel("""[bold red]●[bold yellow] ●[bold green] ●
-                        ....                               ...                         
+	print('''\033[1;34m
+	                           ....                               ...                         
                         ...                                      ..                       
                        ..           ....            ...           ,,@*                    
                      ....        .          ,,,.,,,,,. .     ,. .,,&&@                    
@@ -339,8 +338,7 @@ def banner():
            /*#%&&&&&&&&&&&@@&@&&&@&%(///***%&(//(/(((((((//%@@@&&%@@@@((#%&&%&&&&&&&&&&&@,
    ........#*/%%%&&@@@&&&@@&@@@&&&&@@@@/*&#((/&%/(@@@@@@@@@&@@@@%%&&&@@&&%%%%&&&&&&&&@&@,,
  .........../*/&&&&&&&@&@@&&&&&&&&@&&&&&%/((((((&@@@@@@@@@&&@&@@%&&&&&&&&%&&&&&&&&&&&&&,,,
-    [bold blue]        \\|[bold green]Multi Brute Force Facebook[bold blue]|/""", title="[bold red]>[bold yellow]>[bold green]>[hot_pink2] Version 8.0 [bold green]<[bold yellow]<[bold red]<"))
-    return 0
+	''')
 def hemker_login():
 	banner()
 	try:
