@@ -421,222 +421,52 @@ def dump_publik():
 		exit()
 	except (KeyError,IOError):
 		print(f'[🎮] teman tidak publik')
+		exit()def dump_massal():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
 		exit()
-		def dump_masal():
-	juml = input('Jumlah ID publik : ')
-	for i in range(int(juml)):
-		c = input('Masukan ID Ke '+str(ke)+' : ')
-		p = Tamsis(f'https://graph.facebook.com/v16.0/{c}?fields=friends.limit(5000)&access_token='+token[0],cookies={'cookie': cok[0]}).json()
+	try:
+		jum = int(input('\x1b[1;95m[\x1b[1;95m?\x1b[1;95m]\x1b[1;95m ╰─>\x1b[1;95mMau Berapa Target Kak ? > \x1b[1;97m'))
+	except ValueError:
+		print('\x1b[1;95m[\x1b[1;95m!\x1b[1;95m]\x1b[1;95m ╰─>\x1b[1;95mMasukkan Angka , Bukan Huruf !')
+		exit()
+	if jum<1 or jum>100:
+		print('\x1b[1;95m[\x1b[1;95m!\x1b[1;95m]\x1b[1;95m ╰─>\x1b[1;97mGagal Dump ID ')
+		exit()
+	ses=requests.Session()
+	yz = 0
+	for met in range(jum):
+		yz+=1
+		kl = input('\x1b[1;95m[\x1b[1;95m?\x1b[1;95m]\x1b[1;95m ╰─>\x1b[1;95mMasukkan Idz Yang Ke '+str(yz)+' > \x1b[1;97m')
+		uid.append(kl)
+	for userr in uid:
 		try:
-			j = (p['error']['message'])
-			print(j)
-			break
-		except KeyError:
-			try:
-					if 'tua' in umur:
-						print('tua')
-						for i in p['friends']['data']:
-							c = (i['id']+'|'+i['name'])
-							g = (i['id'])
-							if '100001' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '100002' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '100003' in c:
-								if c in id:pass
-								else:		
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '100004' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '100005' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '100006' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '100007' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '100008' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '100009' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							else:pass
-							print(f'\rberhasil dump {len(id)} ID',end='')
-							sys.stdout.flush()
-					elif 'sepuh' in umur:
-						print('sepuh')
-						for i in p['friends']['data']:
-							c = (i['id']+'|'+i['name'])
-							g = (i['id'])
-							if '1000001' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '1000002' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '1000003' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '1000004' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '1000005' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '1000006' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '1000007' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '1000008' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '1000009' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							else:pass
-							print(f'\rberhasil dump {len(id)} ID',end='')
-							sys.stdout.flush()
-					elif 'modar' in umur:
-						print('modar')
-						for i in p['friends']['data']:
-							c = (i['id']+'|'+i['name'])
-							g = (i['id'])
-							if '1000000' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							else:pass
-							print(f'\rberhasil dump {len(id)} ID',end='')
-							sys.stdout.flush()
-					elif 'muda' in umur:
-						print('muda')
-						for i in p['friends']['data']:
-							c = (i['id']+'|'+i['name'])
-							g = (i['id'])
-							if '10001' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '10002' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '10003' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '10004' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '10005' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '10006' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '10007' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '10008' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							else:pass
-							print(f'\rberhasil dump {len(id)} ID',end='')
-							sys.stdout.flush()
-					elif 'tumbal' in umur:
-						for i in p['friends']['data']:
-							c = (i['id']+'|'+i['name'])
-							g = (i['id'])
-							if '10008' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							elif '10009' in c:
-								if c in id:pass
-								else:
-									if len(g)<14:pass
-									else:id.append(c)
-							else:pass
-							print(f'\rberhasil dump {len(id)} ID',end='')
-							sys.stdout.flush()
-					else:
-						print('acak')
-						for i in p['friends']['data']:
-							c = (i['id']+'|'+i['name'])
-							g = (i['id'])
-							if c in id:pass
-							else:
-								if len(g)<14:pass
-								else:id.append(c)
-							print(f'\rberhasil dump {len(id)} ID',end='')
-							sys.stdout.flush()
-					ke+=1
-			except KeyError:
-				print('\nGagal Dump ID\n[ ! ]ID Harus Public')
-	cetak(pnl(f'Total {len(id)} Terkumpul',width=90,padding=(0,1),style=f"bold white"))
-	p = input('Lanjut Crack (Y/n) : ')
-	if p in ['n','N']:
-		print(f'Yah {len(id)} Hangus ')
-		exit()
-	else:ngatur()
+			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
+			for mi in col['friends']['data']:
+				try:
+					iso = (mi['id']+'|'+mi['name'])
+					if iso in id:pass
+					else:id.append(iso)
+				except:continue
+		except (KeyError,IOError):
+			pass
+		except requests.exceptions.ConnectionError:
+			print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mSinyal Anda Kurang Bagus Nih !')
+			exit()
+	try:
+		print('')
+		print(f'\x1b[1;95m[\x1b[1;95m+\x1b[1;95m]\x1b[1;95m ╰─>\x1b[1;95mTotal ID Yang Terkumpul = {asu}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(f'{x}')
+		print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;97mSinyal Anda Kurang Bagus Nih !')
+		back()
+	except (KeyError,IOError):
+		print(f'\x1b[1;95m[\x1b[1;95m!\x1b[1;95m]\x1b[1;95m ╰─>\x1b[1;92mcari yang bener kontol! \33[m(\x1b[1;91mX\33[m)')
+		time.sleep(3)
+		back()
 def setting():
 	print('')
 	print(f'{nom1} Dahulukan id new')
