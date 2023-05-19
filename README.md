@@ -27,4 +27,4 @@
 11.pip install stdiomask && pip install rich && pip install colorama && pip install bs4
 
 
-12.python Sempak.py 
+12.python sun.py 
