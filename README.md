@@ -1,7 +1,7 @@
 # SEMPAK 
 [![Facebokm Badge](https://img.shields.io/badge/-facebook.NolepXxxx-blue?style=flat&logo=Facebook&logoColor=white&link=https://www.facebook.com/profile.php?id=100000065589321.qwerty69/)](https://www.facebook.com/profile.php?id=100000065589321.qwerty69) [![Instagram Badge](https://img.shields.io/badge/-instagram.NolepXxxx_-f01397?style=flat&logo=Instagram&logoColor=white&link=https://www.instagram.com/NolepXxxx.qwerty_/)](https://www.instagram.com/NolepXxxx.qwerty_/) [![WhatsApp Badge](https://img.shields.io/badge/-6285759162117-green?style=flat&logo=WhatsApp&logoColor=white&link=https://wa.me/6285759162117/)](https://wa.me/6289667838732/) [![Github Badge](https://img.shields.io/badge/-NolepXxx-red?style=flat&logo=Github&logoColor=white&link=https://github.com/maskprivate1457/)](https://github.com/NolepXx)
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Koulen&size=25&duration=5000&color=light&center=true&vCenter=true&multiline=true&width=600&lines=+KAWAII2+,Jangan+Lupa+Nonton+Okep+Dan+Comli+Jangan+Kasih+Kendor+Gass+Croot)](https://git.io/typing-svg)
-<p align="center">META-ANBU5</p>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Koulen&size=25&duration=5000&color=light&center=true&vCenter=true&multiline=true&width=600&lines=+SEMPAK+,Jangan+Lupa+Nonton+Okep+Dan+Comli+Jangan+Kasih+Kendor+Gass+Croot)](https://git.io/typing-svg)
+<p align="center">META-SEMPAK</p>
 <p align=left> <img src=https://komarev.com/ghpvc/?username=maskprivate1457 alt=NolepXx/> </p>
 
 1.pkg update && pkg upgrade 
