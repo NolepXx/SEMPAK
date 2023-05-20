@@ -718,13 +718,14 @@ def login():
 		cok = open('.cok.txt','r').read()
 		tokenku.append(token)
 		try:
-			basariheker = requests.get('https://graph.facebook.com/me?fields=id&access_token='+tokenku[0], cookies={'cookie':cok})
-			basganteng = json.loads(basariheker.text)['id']
-			menu(basganteng)
+			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
+			sy2 = json.loads(sy.text)['name']
+			sy3 = json.loads(sy.text)['id']
+			menu(sy2,sy3)
 		except KeyError:
-			login_lagi334()
+			login123()
 		except requests.exceptions.ConnectionError:
-			li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
+			li = 'TIDAK ADA KONEKSI INTERNET, PERIKSA & COBA LAGI !'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
