@@ -24,17 +24,9 @@ princp=[]
 try:
 		prox= requests.get('https://raw.githubusercontent.com/NolepXx/proxy-list/main/socks4.txt').text
 		open('.proxy.txt','w').write(prox)
-	
-		null = open(os.devnull, "w")
-		insta = subprocess.call(["dpkg","-s","play-audio"],stdout=null,stderr=subprocess.STDOUT)
-		if insta !=0:os.system('pkg install play-audio -y &> /dev/null')
-		null.close()
-		musik_="play"
-	except:musik_="error!!"
-	sys.stdout.write(f'\x1b[1;35m\x1b]2; Developer Script : NolepXx\x07')
-	sys.path.append(os.path.realpath('.'))
-except requests.exceptions.ConnectionError:
-	print("* Jaringan ellor tod..!!");quit()
+	except Exception as e:
+	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari NolepXx')
+prox=open('.prox.txt','r').read().splitlines()
 	
 ###----------[ APPEND ]---------- ###
 mytok = []
