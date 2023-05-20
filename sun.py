@@ -642,11 +642,10 @@ for xd in range(10000) :
 	
 def uaku():
 	try:
-	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4&timeout=10000&country=all').text
-	open('SOCKS4_RAW','w').write(proxylist)
+	proxylist= requests.get('https://api.proxopen('.prox.txt','w').write(prox)
 except Exception as e:
-	bra_anim(f'gagal ster :(')
-proxsi=open('SOCKS4_RAW','r').read().splitlines()
+	print(' [+] Koneksi Internet Anda Tidak Ad')
+prox=open('.prox.txt','r').read().splitlines()
 		#------------[ INDICATION ]---------------#
 P = '\x1b[1;97m' # PUTIH
 M = '\x1b[1;91m' # MERAH
