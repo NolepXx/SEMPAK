@@ -365,22 +365,22 @@ def login():
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
-		tokenku.append(token)
+		tokenefb.append(token)
 		try:
-			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
-			sy2 = json.loads(sy.text)['name']
-			sy3 = json.loads(sy.text)['id']
-			menu(sy2,sy3)
+			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenefb[0], cookies={'cookie':cok})
+			sy = json.loads(sy.text)['id']
+			menu(sy)
 		except KeyError:
-			login()
+			login_men()
 		except requests.exceptions.ConnectionError:
-			li = ' ╰─  Problem Internet Connection, Check And Try Again'
+			li = '# Problem Internet Connection, Check And Try Again'
 			lo = mark(li, style='red')
-			sol().print(lo, style='cyan')
+			sol().print(lo, style='green')
 			exit()
 	except IOError:
-		login()
-def login_lagi334():
+		login_men()
+		
+def login_men():
 	try:
 		os.system('clear')
 		banner()
@@ -446,15 +446,18 @@ def crack_file():
 			id.append(xid)
 		setting()
 #------------------[ BAGIAN-MENU ]----------------#
-def menu(name,id):
-	try:	
+def menu(id):
+	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		print('[×] Cookies Kadaluarsa ')
-		time.sleep(5)
-		login()
+		os.system('rm -rf .token.txt && rm -rf .cok.txt')
+		os.system('rm -rf .tokeneakun.txt && rm -rf .cookiesakun.txt')
+		baz_anim(f'└──{mer} cookies telah kadaluarsa ster')
+		waktu(1)
+		login_men()
 	os.system('clear')
+	waktu(1)
 	banner()
 	try:cek_data = requests.get("http://ip-api.com/json/").json()
 	except:cek_data = {'-'}
