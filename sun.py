@@ -785,7 +785,8 @@ def menu(id):
 		time.sleep(5)
 		login_lagi334()
 	os.system('clear')
-	banner()try:cek_data = requests.get("http://ip-api.com/json/").json()
+	banner()
+	try:cek_data = requests.get("http://ip-api.com/json/").json()
 	except:cek_data = {'-'}
 	try:ipbusuk = cek_data["isp"]
 	except:ipbusuk = {'-'}
