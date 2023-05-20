@@ -28,6 +28,7 @@ pretty.install()
 CON=sol()
 taplikasi=[]
 gabriel=[]
+uakuh=[]
 console = Console()
 ses=requests.Session()
 id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[],[],[],[],[],[]
@@ -45,8 +46,11 @@ mytok = []
 ugent = []
 ugen = []
 usam = []
+uakuh2=[]
 ugen2 = []
+usam=[]
 uakuh = []
+uga=[]
 usragent = []
 uaku2 = []
 ###----------[ GENERATE USERAGENT ]---------- ###
@@ -731,8 +735,8 @@ def login_lagi334():
 #------------------[ BAGIAN-MENU ]----------------#
 def menu(id):
 	try:
-		token = open('.token.txt','w').read()
-		cok = open('.cok.txt','w').read()
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
 	except IOError:
 		print('[×] Cookies Kadaluarsa ')
 		time.sleep(5)
