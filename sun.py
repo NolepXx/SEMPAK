@@ -791,7 +791,7 @@ class get_data_web:
 def result():
 	print('>> Hasil OK Anda ')
 	print('>> Hasil CP Anda ')
-	print('>> Kembali	')
+	print('>> 00 Kembali	')
 	kz = input('\n>> Pilih : ')
 	if kz in ['1','01']:
 		try:vin = os.listdir('CP')
@@ -1211,29 +1211,29 @@ def setting():
 		exit()
 	print('>> 1. Mobile ')
 	print('>> 2. Mbasic ')
-#	print('>> 3. Touch  ')
-#	print('>> 4. Mtouch ')
+	print('>> 3. Touch  ')
+	print('>> 4. Mtouch ')
 	print('')
 	hc = input('>> Pilih : ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['2','02']:
 		method.append('free')
-#	elif hc in ['3','03']:
-#		method.append('touch')
+	elif hc in ['3','03']:
+		method.append('touch')
 	elif hc in ['4','04']:
 		method.append('mbasic')
 	else:
 		method.append('mobile')
 	print('')
-#	_jembot_ = input('>> Tambahkan Aplikasi Terkait ( Y/t ) ')
-#	if _jembot_ in ['']:
-#		print('>> Pilih Yang Bener Kontol ')
-#		back()
-#	elif _jembot_ in ['y','Y']:
-#		taplikasi.append('ya')
-#	else:
-#		taplikasi.append('no')
+	_jembot_ = input('>> Tambahkan Aplikasi Terkait ( Y/t ) ')
+	if _jembot_ in ['']:
+		print('>> Pilih Yang Bener Kontol ')
+		back()
+	elif _jembot_ in ['y','Y']:
+		taplikasi.append('ya')
+	else:
+		taplikasi.append('no')
 	pwplus=input('>> Tambahkan Password Manual ( Y/t ) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
