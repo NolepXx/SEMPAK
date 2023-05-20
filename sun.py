@@ -367,7 +367,7 @@ def login():
 		cok = open('.cok.txt','r').read()
 		tokenku.append(token)
 		try:
-			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenefb[0], cookies={'cookie':cok})
+			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
 			sy = json.loads(sy.text)['id']
 			menu(sy)
 		except KeyError:
