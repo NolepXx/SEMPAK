@@ -369,7 +369,7 @@ def login123():
 	if bryn in ['1','01']:
 		login()
 	elif bryn in ['2','02']:
-		lainnya()
+		login123()
 	elif bryn in ['0','00']:
 		exit()
 	else:
