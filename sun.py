@@ -426,8 +426,8 @@ for x in range(1000):
 	j=random.randrange(1, 9)
 	k=random.randrange(1, 9)
 	l='Mobile Safari/537.36'
-	uaku2=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
-	ugen.append(uaku2)
+	uakuh=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
+	ugen2.append(uakuh)
 ### --------- [ User Agent By Denventa ] --------- ###	
 for xd in range(10000):
 	a=random.choice(['1','1.0','1.5','2','2.0','2.5','3','3.0','3.5','4','4.0','4.5','5','5.0','5.5','6','6.0','6.5','7','7.0','7.5','8','8.0','8.5','9','9.0','9.5','10','10.0','10.5','11','11.0','11.5','12','12.0','12.5','13'])
