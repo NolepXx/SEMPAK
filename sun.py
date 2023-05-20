@@ -881,9 +881,9 @@ def menu(name,id):
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m00. Keluar \33[m( \x1b[1;92mHapus Cookie \33[m) ')
 	_____brayennn__xd_____ = input('\n\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
 	if _____brayennn___xd____ in ['1','01']:
-		brayen_dump()
+		dump_publick()
 	elif _____brayennn___xd____ in ['2','02']:
-		massal()
+		dump_massal()
 	elif _____brayennn___xd____ in ['3','03']:
 		group()
 	elif _____brayennn___xd____ in ['4','04']:
@@ -1290,7 +1290,7 @@ def dump_massal():
 		time.sleep(3)
 		back()
 		#-------------------[ CRACK-PUBLIK-MASSAL]----------------#
-def brayen_dump():
+def dump_publick():
 	try:
 		token = open('.token.txt','r').read()
 		kukis = open('.cok.txt','r').read()
