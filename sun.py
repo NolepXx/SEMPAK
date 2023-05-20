@@ -1,29 +1,66 @@
-#------------------[ IMPORT MODULE ]-------------------#
-import requests,bs4,json,os,sys,random,datetime,time,re,urllib3,rich,base64
+#---------------------[ IMPORT-MODULE ]-------------------#
+import requests, os, re, bs4, calendar, sys, json, time, random, datetime, subprocess, logging, base64,uuid
+import requests,bs4,json,os,sys,random,datetime,time,re
+import os,sys,json 
+import requests as req 
+import urllib3,rich,base64
+import time
+from datetime import datetime
+from time import strftime
+from requests.exceptions import ChunkedEncodingError
+from requests.exceptions import ConnectionError
+from rich.table import Table as me
+from rich.table import Table
+from rich.console import Console as sol
+from bs4 import BeautifulSoup as sop
+from bs4 import BeautifulSoup as parser
+from bs4 import BeautifulSoup as par
+from concurrent.futures import ThreadPoolExecutor as tred
+from rich.console import Group as gp
+from rich.panel import Panel as panel
+from rich.panel import Panel as nel
+from rich.progress import track
 from time import sleep
-from rich import pretty
-from rich.tree import Tree
-from rich.panel import Panel
 from rich import print as cetak
+from concurrent.futures import ThreadPoolExecutor as BrayennnXD 
+from rich.panel import Panel
+from rich.markdown import Markdown as mark
+from rich.columns import Columns
+from rich.columns import Columns as col
+from rich.tree import Tree
 from rich import print as rprint
 from rich import print as prints
-from rich.progress import track
-from rich.text import Text as tekz
+from rich import pretty
 from rich.console import Console
-from rich.columns import Columns
-from rich.panel import Panel as nel
-from rich.panel import Panel as panel
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup as par
-from rich.console import Group as gp
-from bs4 import BeautifulSoup as parser
-from rich.columns import Columns as col
 from rich.console import Console as sol
-from rich.markdown import Markdown as mark
-from concurrent.futures import ThreadPoolExecutor as tred
-from concurrent.futures import ThreadPoolExecutor as BrayennnXD 
 from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn
-#------------------[ GLOBAL NAME ]-------------------#
+from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn,TimeElapsedColumn
+from rich.text import Text as tekz
+###----------[ KAMU NANYA ]---------- ###
+def april(text):
+        for x in text + '\n':
+                sys.stdout.write(x)
+                sys.stdout.flush()
+                sleep(random.random() * 0.05)
+
+def inuganz(text):
+        for x in text + '\n':
+                sys.stdout.write(x)
+                sys.stdout.flush()
+                sleep(random.random() * 0.01)
+                
+def jalan(z):
+	for e in z + "\n":
+		sys.stdout.write(e)
+		sys.stdout.flush()
+		time.sleep(0.05)
+###----------[ GLOBAL NAME ]---------- ###
+ses = requests.Session()
+reset = "[/]"
+IP = requests.get("http://ip-api.com/json/").json()["query"]
+negara = requests.get("http://ip-api.com/json/").json()["country"]
+datt = []
+sim = requests.get("http://ip-api.com/json/").json()["isp"]
 pretty.install()
 CON=sol()
 taplikasi=[]
