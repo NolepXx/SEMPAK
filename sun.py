@@ -365,7 +365,7 @@ def login():
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
-		tokenefb.append(token)
+		tokenku.append(token)
 		try:
 			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenefb[0], cookies={'cookie':cok})
 			sy = json.loads(sy.text)['id']
