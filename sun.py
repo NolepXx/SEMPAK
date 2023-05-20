@@ -690,8 +690,8 @@ def banner():
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
-		token = open('.token.txt','w').read()
-		cok = open('.cok.txt','w').read()
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
 		tokenku.append(token)
 		try:
 			basariheker = requests.get('https://graph.facebook.com/me?fields=id&access_token='+tokenku[0], cookies={'cookie':cok})
