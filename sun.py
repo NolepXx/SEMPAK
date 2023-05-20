@@ -882,33 +882,33 @@ def menu(name,id):
 	_____brayennn__xd_____ = input('\n\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
 	if _____brayennn___xd____ in ['1','01']:
 		dump_publick()
-	elif _____brayennn___xd____ in ['2','02']:
+	elif _____brayennn__xd_____ in ['2','02']:
 		dump_massal()
-	elif _____brayennn___xd____ in ['3','03']:
+	elif _____brayennn__xd_____ in ['3','03']:
 		group()
-	elif _____brayennn___xd____ in ['4','04']:
+	elif _____brayennn__xd_____ in ['4','04']:
 		crack_email()
-	elif _____brayennn___xd____ in ['5','05']:
+	elif _____brayennn__xd_____ in ['5','05']:
 		crack_file()
-	elif _____brayennn___xd____ in ['6','06']:
+	elif _____brayennn__xd_____ in ['6','06']:
 		crack_nama()
-	elif _____brayennn___xd____ in ['7','07']:
+	elif _____brayennn__xd_____ in ['7','07']:
 		pengikut()
-	elif _____brayennn___xd____ in ['8','08']:
+	elif _____brayennn__xd_____ in ['8','08']:
 		komen()
-	elif _____brayennn___xd____ in ['9','09']:
+	elif _____brayennn__xd_____ in ['9','09']:
 		file_cp()
 	elif _____brayennn___xd____ in ['10']:
 		result()
-	elif _____brayennn___xd____ in ['11']:
+	elif _____brayennn__xd_____ in ['11']:
 		siu()
-	elif _____brayennn___xd____ in('12'):
+	elif _____brayennn__xd_____ in('12'):
 		spam_wa()
-	elif _____brayennn___xd____ in('13'):
+	elif _____brayennn__xd_____ in('13'):
 		spam_sms()
-	elif _____brayennn___xd____ in('14'):
+	elif _____brayennn__xd_____ in('14'):
 		lacakip()
-	elif _____brayennn___xd____ in ['15']:
+	elif _____brayennn__xd_____ in ['15']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
 		print(f' [+] {m}Sukses Logout+Hapus Cookies{x}')
