@@ -367,20 +367,18 @@ def login():
 		cok = open('.cok.txt','r').read()
 		tokenku.append(token)
 		try:
-			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
-			sy2 = json.loads(sy.text)['name']
-			sy3 = json.loads(sy.text)['id']
-			menu(sy2,sy3)
+			basariheker = requests.get('https://graph.facebook.com/me?fields=id&access_token='+tokenku[0], cookies={'cookie':cok})
+			basganteng = json.loads(basariheker.text)['name']
+			menu(basganteng)
 		except KeyError:
-			login123()
+			login_lagi334()
 		except requests.exceptions.ConnectionError:
-			li = 'TIDAK ADA KONEKSI INTERNET, PERIKSA & COBA LAGI !'
+			li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
 	except IOError:
-		login123()
-		
+		login_lagi334()
 def login_lagi334():
 	try:
 		os.system('clear')
@@ -447,7 +445,7 @@ def crack_file():
 			id.append(xid)
 		setting()
 #------------------[ BAGIAN-MENU ]----------------#
-def menu(name,id):
+def menu(id):
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
