@@ -485,7 +485,7 @@ def menu(name,id):
 	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t\t     \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AKUN ANDA\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
-	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mNama Akun Facebook \x1b[1;92mKamu      : \x1b[1;93m{nama}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mNama Akun Facebook \x1b[1;92mKamu      : \x1b[1;93m{name}')
 	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mIdentitas Diri \33[m(\x1b[1;93mID\33[m) \x1b[1;92mKamu     : \x1b[1;93m{id}')
 	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t             \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI LOKASI ANDA\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
