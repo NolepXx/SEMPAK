@@ -456,7 +456,6 @@ def menu(id):
 		baz_anim(f'└──{mer} cookies telah kadaluarsa ster')
 		login_men()
 	os.system('clear')
-	waktu(1)
 	banner()
 	try:cek_data = requests.get("http://ip-api.com/json/").json()
 	except:cek_data = {'-'}
