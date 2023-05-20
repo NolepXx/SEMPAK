@@ -368,19 +368,20 @@ def login():
 		tokenku.append(token)
 		try:
 			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
-			sy = json.loads(sy.text)['id']
-			login_lagi334(sy)
+			sy2 = json.loads(sy.text)['name']
+			sy3 = json.loads(sy.text)['id']
+			menu(sy2,sy3)
 		except KeyError:
-			login_lagi334()
+			login123()
 		except requests.exceptions.ConnectionError:
-			li = '# Problem Internet Connection, Check And Try Again'
+			li = 'TIDAK ADA KONEKSI INTERNET, PERIKSA & COBA LAGI !'
 			lo = mark(li, style='red')
-			sol().print(lo, style='green')
+			sol().print(lo, style='cyan')
 			exit()
 	except IOError:
-		login_lagi334()
+		login123()
 		
-def login_men():
+def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
