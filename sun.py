@@ -371,14 +371,14 @@ def login():
 			sy = json.loads(sy.text)['id']
 			menu(sy)
 		except KeyError:
-			login_men()
+			login_lagi334()
 		except requests.exceptions.ConnectionError:
 			li = '# Problem Internet Connection, Check And Try Again'
 			lo = mark(li, style='red')
 			sol().print(lo, style='green')
 			exit()
 	except IOError:
-		login_men()
+		login_lagi334()
 		
 def login_men():
 	try:
@@ -446,15 +446,14 @@ def crack_file():
 			id.append(xid)
 		setting()
 #------------------[ BAGIAN-MENU ]----------------#
-def menu(id):
+def menu(name,id):
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		os.system('rm -rf .token.txt && rm -rf .cok.txt')
-		os.system('rm -rf .tokeneakun.txt && rm -rf .cookiesakun.txt')
-		baz_anim(f'└──{mer} cookies telah kadaluarsa ster')
-		login_men()
+		print('[×] Cookies Kadaluarsa ')
+		time.sleep(5)
+		login_lagi334()
 	os.system('clear')
 	banner()
 	try:cek_data = requests.get("http://ip-api.com/json/").json()
@@ -485,7 +484,7 @@ def menu(id):
 	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t\t     \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AKUN ANDA\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
-	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mNama Akun Facebook \x1b[1;92mKamu      : \x1b[1;93m{name}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mNama Akun Facebook \x1b[1;92mKamu      : \x1b[1;93m{nama}')
 	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mIdentitas Diri \33[m(\x1b[1;93mID\33[m) \x1b[1;92mKamu     : \x1b[1;93m{id}')
 	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t             \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI LOKASI ANDA\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
