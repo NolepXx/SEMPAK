@@ -28,6 +28,8 @@ pretty.install()
 CON=sol()
 taplikasi=[]
 gabriel=[]
+ugen=[]
+ugen2=[]
 uakuh=[]
 console = Console()
 ses=requests.Session()
@@ -486,7 +488,7 @@ for xd in range(10000) :
 	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
 	e='Mobile Safari/537.36'
 	usam=f'{a} {b}; {c}{d} {e}'
-	ugen.append(usam) 
+	ugen2.append(usam) 
 	
 	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
 	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
