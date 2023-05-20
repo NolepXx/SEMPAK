@@ -420,7 +420,7 @@ for xd in range(10000):
 	k=random.randrange(40,150)
 	l='Mobile Safari/537.36'
 	uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	ugen2.append(uaku)
+	ugen.append(uaku)
 	
 	aa='Mozilla/5.0 (Linux; Android 5.1.1;'
 	b=random.choice(['6','7','8','9','10','11','12'])
@@ -435,7 +435,7 @@ for xd in range(10000):
 	k=random.randrange(40,150)
 	l='Safari/537.36'
 	uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	ugen2.append(uaku)
+	ugen.append(uaku)
 	
 for x in range(1000):
 	a='Mozilla/5.0 (Linux; Android 8.1.0; CPH1851) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.73 Mobile Safari/537.36'
@@ -451,7 +451,7 @@ for x in range(1000):
 	k=random.randrange(1, 9)
 	l='Mobile Safari/537.36'
 	uakuh=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
-	ugen2.append(uakuh)
+	ugen.append(uakuh)
 ### --------- [ User Agent By Denventa ] --------- ###	
 for xd in range(10000):
 	a=random.choice(['1','1.0','1.5','2','2.0','2.5','3','3.0','3.5','4','4.0','4.5','5','5.0','5.5','6','6.0','6.5','7','7.0','7.5','8','8.0','8.5','9','9.0','9.5','10','10.0','10.5','11','11.0','11.5','12','12.0','12.5','13'])
