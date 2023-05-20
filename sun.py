@@ -364,12 +364,10 @@ _____¶¶¶¶¶¶¶¶¶________¶¶¶¶¶¶__________¶¶¶¶¶_______
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Login Menggunakan Cookie [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Menu Crack Tanpa Login [[bold green] ON [bold white]][/]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Keluar Dari Script [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]Pilihan Login",style=f"bold white"))
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Login Menggunakan Cookie [[bold green] ON [bold white]][/]\n[bold white][/]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Keluar Dari Script [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]Pilihan Login",style=f"bold white"))
 	bryn = input(f' ╰─  Pilih Menu : ')
 	if bryn in ['1','01']:
 		login()
-	elif bryn in ['2','02']:
-		login123()
 	elif bryn in ['0','00']:
 		exit()
 	else:
