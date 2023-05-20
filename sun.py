@@ -13,21 +13,24 @@ from rich.columns import Columns as col
 from rich import print as rprint
 from rich import pretty
 from rich.text import Text as tekz
+#------------------[ GLOBAL NAME ]-------------------#
 pretty.install()
 CON=sol()
-#------------------[ USER-AGENT ]-------------------#
-ugen2=[]
-ugen=[]
-cokbrut=[]
+wa = Console()
+taplikasi=[]
+gabriel=[]
+console = Console()
 ses=requests.Session()
-princp=[]
+id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[],[],[],[],[],[]
+ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[],[]
+sys.stdout.write('\x1b]2; BMBF | BrayennnXD Multi Brute Facebook\x07')
+#------------------[ USER-AGENT ]-------------------#
 try:
-		prox= requests.get('https://raw.githubusercontent.com/NolepXx/proxy-list/main/socks4.txt').text
-		open('.proxy.txt','w').write(prox)
-	except Exception as e:
-	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari NolepXx')
-prox=open('.prox.txt','w').read().splitlines()
-	
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
+	open('.prox.txt','w').write(prox)
+except Exception as e:
+	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD')
+prox=open('.prox.txt','r').read().splitlines()
 ###----------[ APPEND ]---------- ###
 mytok = []
 ugent = []
@@ -601,18 +604,18 @@ for xd in range(10000) :
 	uga=f'{a} {b}; {c} {d}) {e}{f} {g}'
 	ugen.append(uga)
 	
-def uaku():
-	try:
+def uaku():try:
 		ua=open('bbnew.txt','r').read().splitlines()
 		for ub in ua:
-			ugen2.append(ub)
+			ugen.append(ub)
 	except:
-		a=requests.get('https://raw.githubusercontent.com/NolepXx/proxy-list/main/socks4.txt').text
-		ua=open('.ua.txt','w')
+		a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
+		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
-		ua=open('.ua.txt','r').read().splitlines()#------------[ INDICATION ]---------------#
+		ua=open('.bbnew.txt','r').read().splitlines()
+		#------------[ INDICATION ]---------------#
 P = '\x1b[1;97m' # PUTIH
 M = '\x1b[1;91m' # MERAH
 H = '\x1b[1;92m' # HIJAU
