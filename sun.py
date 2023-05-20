@@ -347,11 +347,11 @@ for xd in range(10000):
 	uga=f'{a} {b}; {c} {d}) {e}{f} {g}'
 	ugen.append(uga) 
 try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox)
+	prox= requests.get('https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master').text
+	open('socks4.txt','w').write(list)
 except Exception as e:
 	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD')
-prox=open('.prox.txt','r').read().splitlines()
+prox=open('socks4.txt','r').read().splitlines()
 for xd in range(10000):
 	a='Mozilla/5.0 (Linux; Tizen'
 	b=random.randrange(1, 9)
