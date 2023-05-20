@@ -468,8 +468,8 @@ for t in range(10000):
 	_8=f'Mozilla/5.0 (Linux; Android {a}; {random8} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
 	_9=f'Mozilla/5.0 (Linux; Android {a}; {random9} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
 	_10=f'Mozilla/5.0 (Windows NT {a}; {random10} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-	uaku2 = random.choice([_1,_2,_3,_4,_5,_6,_7,_8,_9,_10])
-	ugen.append(uaku2)
+	uakuh = random.choice([_1,_2,_3,_4,_5,_6,_7,_8,_9,_10])
+	ugen2.append(uakuh)
 	
 for x in range(10):
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
