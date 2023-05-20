@@ -369,7 +369,7 @@ def login():
 		try:
 			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
 			sy = json.loads(sy.text)['id']
-			menu(sy)
+			login_lagi334(sy)
 		except KeyError:
 			login_lagi334()
 		except requests.exceptions.ConnectionError:
