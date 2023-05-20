@@ -474,7 +474,7 @@ def menu(name,id):
 	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t\t       \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AUTHOR\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mAuthor      : \x1b[1;93mDemias Syihab Aldino/Nolep/Brayen All Aouthor❤️ \33[m(\x1b[1;92mNolepXx/XzonXD/BrayennnXDDemias_Asyhiab\33[m)')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mAuthor      : \x1b[1;93mDemias Syihab Aldino/Nolep/Brayen All Aouthor❤️ ')
 	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mGithub      : \x1b[1;93mNolepXx')
 	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mWhatsapp    : \x1b[1;93m089667838732/085759162117')
 	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mInstagram   : \x1b[1;93mmask_private1457/NolepXx')
@@ -514,7 +514,7 @@ def menu(name,id):
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m12. Spam wa \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m13. Spam sms \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m14. lacak ip \33[m[\x1b[1;92mON\33[m]')
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m00. Keluar \33[m( \x1b[1;92mHapus Cookie \33[m) ')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m15. Keluar \33[m( \x1b[1;92mHapus Cookie \33[m) ')
 	_____demias__syihab_____ = input('\n\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
 	if _____demias__syihab_____ in ['1','01']:
 		brayen_dump()
