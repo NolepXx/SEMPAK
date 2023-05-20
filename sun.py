@@ -845,25 +845,34 @@ def menu(name,id):
 	except:city = cek_data['-']
 	jam = strftime('%H:%M:%S')
 	ip = requests.get("https://api.ipify.org").text
-	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
+print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t\t       \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AUTHOR\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
 	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mAuthor      : \x1b[1;93mDemias Syihab Aldino \33[m(\x1b[1;92mmaskprivate1457\33[m)')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mGithub      : \x1b[1;93mmaskprivate1457')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mGithub      : \x1b[1;93mNolepXx')
 	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mWhatsapp    : \x1b[1;93m089667838732')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mInstagram   : \x1b[1;93mmask_private1457')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mFacebook    : \x1b[1;93mDemias Syihab')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mYoutube     : \x1b[1;93mTutorial Termux & Learn & Tutorial')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mUpdate By   : \x1b[1;93mMuhammad-Basari \33[m(\x1b[1;92mBasari-id\33[m)')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mSource Code : \x1b[1;93mAlvino \33[m(\x1b[1;92mAlvino_Adijaya_Xy\33[m)')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mInstagram   : \x1b[1;93mJANDA-HERANG/JAHE')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mFacebook    : \x1b[1;93mNoleXxxx')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mYoutube     : \x1b[1;93mJANDA+HERANG')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mUpdate By   : \x1b[1;93mNolepXx \33[m(\x1b[1;92mBasari-id\33[m)')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mSource Code : \x1b[1;93mAlvino \33[m(\x1b[1;92mDemias/XzonXD/BrayennnXD\33[m)')
 	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t\t     \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AKUN ANDA\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
 	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mNama Akun Facebook \x1b[1;92mKamu      : \x1b[1;93m{name}')
 	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mIdentitas Diri \33[m(\x1b[1;93mID\33[m) \x1b[1;92mKamu     : \x1b[1;93m{id}')
 	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
-	print('\t\t\t             \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92m MENU CARCK \x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
+	print('\t\t\t             \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI LOKASI ANDA\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Internet Protocol Kamu       : {k}{ip}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Negara Kamu        : {k}{negara}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Kota Kamu          : {k}{asal_kota}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Kartu Kamu         : {k}{sim}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Wiayah Kamu        : {k}{asal_reg}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Waktu Saat Ini     : {k}{jam}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Tanggal Sekarang   : {k}{hari},{sekarang}')
+	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
+	print('\t\t\t\t        \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI MENU\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m01. Crack Massal \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m02. Crack Publik \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m03. Cek Opsi \33[m[\x1b[1;92mON\33[m]')
@@ -879,36 +888,36 @@ def menu(name,id):
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m13. Spam sms \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m14. lacak ip \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m00. Keluar \33[m( \x1b[1;92mHapus Cookie \33[m) ')
-	_____brayennn__xd_____ = input('\n\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
-	if _____brayennn___xd____ in ['1','01']:
+	_____demias__syihab_____ = input('\n\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
+	if _____demias__syihab_____ in ['1','01']:
 		dump_publick()
-	elif _____brayennn__xd_____ in ['2','02']:
+	elif _____demias__syihab_____ in ['2','02']:
 		dump_massal()
-	elif _____brayennn__xd_____ in ['3','03']:
+	elif _____demias__syihab_____ in ['3','03']:
 		group()
-	elif _____brayennn__xd_____ in ['4','04']:
+	elif _____demias__syihab_____ in ['4','04']:
 		crack_email()
-	elif _____brayennn__xd_____ in ['5','05']:
+	elif _____demias__syihab_____ in ['5','05']:
 		crack_file()
-	elif _____brayennn__xd_____ in ['6','06']:
+	elif _____demias__syihab_____ in ['6','06']:
 		crack_nama()
-	elif _____brayennn__xd_____ in ['7','07']:
+	elif _____demias__syihab_____ in ['7','07']:
 		pengikut()
-	elif _____brayennn__xd_____ in ['8','08']:
+	elif _____demias__syihab_____ in ['8','08']:
 		komen()
-	elif _____brayennn__xd_____ in ['9','09']:
+	elif _____demias__syihab_____ in ['9','09']:
 		file_cp()
-	elif _____brayennn___xd____ in ['10']:
+	elif _____demias__syihab_____ in ['10']:
 		result()
-	elif _____brayennn__xd_____ in ['11']:
+	elif _____demias__syihab_____ in ['11']:
 		siu()
-	elif _____brayennn__xd_____ in('12'):
+	elif _____demias__syihab_____ in('12'):
 		spam_wa()
-	elif _____brayennn__xd_____ in('13'):
+	elif _____demias__syihab_____ in('13'):
 		spam_sms()
-	elif _____brayennn__xd_____ in('14'):
+	elif _____demias__syihab_____ in('14'):
 		lacakip()
-	elif _____brayennn__xd_____ in ['15']:
+	elif _____demias__syihab_____ in ['15']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
 		print(f' [+] {m}Sukses Logout+Hapus Cookies{x}')
