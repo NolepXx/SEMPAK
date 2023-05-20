@@ -26,7 +26,7 @@ try:
 		open('.proxy.txt','w').write(prox)
 	except Exception as e:
 	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari NolepXx')
-prox=open('.prox.txt','r').read().splitlines()
+prox=open('.prox.txt','w').read().splitlines()
 	
 ###----------[ APPEND ]---------- ###
 mytok = []
@@ -675,8 +675,8 @@ def banner():
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
+		token = open('.token.txt','w').read()
+		cok = open('.cok.txt','w').read()
 		tokenku.append(token)
 		try:
 			basariheker = requests.get('https://graph.facebook.com/me?fields=id&access_token='+tokenku[0], cookies={'cookie':cok})
@@ -718,8 +718,8 @@ def login_lagi334():
 #------------------[ BAGIAN-MENU ]----------------#
 def menu(id):
 	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
+		token = open('.token.txt','w').read()
+		cok = open('.cok.txt','w').read()
 	except IOError:
 		print('[×] Cookies Kadaluarsa ')
 		time.sleep(5)
