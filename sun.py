@@ -822,31 +822,7 @@ def crack_file():
 		setting()
 #------------------[ BAGIAN-MENU ]----------------#
 def menu(name,id):
-	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-	except IOError:
-		print('[×] Cookies Kadaluarsa ')
-		time.sleep(5)
-		login_lagi334()
-	os.system('clear')
-	banner()
-	try:cek_data = requests.get("http://ip-api.com/json/").json()
-	except:cek_data = {'-'}
-	try:ipbusuk = cek_data["isp"]
-	except:ipbusuk = {'-'}
-	try:asal_kota = cek_data["city"]
-	except:asal_kota = {'-'}
-	try:asal_reg = cek_data["region"]
-	except:asal_reg = cek_data['-']
-	try:times = cek_data["timezone"]
-	except:times = cek_data['-']
-	try:city = cek_data["city"]
-	except:city = cek_data['-']
-	jam = strftime('%H:%M:%S')
-	ip = requests.get("https://api.ipify.org").text
-print('\def menu(name,id):
-	try:
+	try:	
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
