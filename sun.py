@@ -454,7 +454,7 @@ def login_menu():
 				back()
 	except:pass
 	#------------------[ BAGIAN-MENU ]----------------#
-def def menu(name,id):
+def menu(name,id):
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
