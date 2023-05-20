@@ -20,7 +20,8 @@ ugen2=[]
 ugen=[]
 cokbrut=[]
 ses=requests.Session()
-princp=[]try:
+princp=[]
+try:
 		prox= requests.get('https://raw.githubusercontent.com/NolepXx/proxy-list/main/socks4.txt').text
 		open('.proxy.txt','w').write(prox)
 	
