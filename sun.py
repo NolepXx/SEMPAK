@@ -372,14 +372,14 @@ def login():
 			sy3 = json.loads(sy.text)['id']
 			menu(sy2,sy3)
 		except KeyError:
-			login123()
+			login()
 		except requests.exceptions.ConnectionError:
 			li = ' ╰─  Problem Internet Connection, Check And Try Again'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
 	except IOError:
-		login123()
+		login()
 def login_lagi334():
 	try:
 		os.system('clear')
@@ -453,7 +453,7 @@ def menu(name,id):
 	except IOError:
 		print('[×] Cookies Kadaluarsa ')
 		time.sleep(5)
-		login_lagi334()
+		login()
 	os.system('clear')
 	banner()
 	try:cek_data = requests.get("http://ip-api.com/json/").json()
