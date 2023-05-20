@@ -374,12 +374,12 @@ def login():
 		except KeyError:
 			login123()
 		except requests.exceptions.ConnectionError:
-			li = 'TIDAK ADA KONEKSI INTERNET, PERIKSA & COBA LAGI !'
+			li = ' ╰─  Problem Internet Connection, Check And Try Again'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
 	except IOError:
-		login_lagi334()
+		login123()
 def login_lagi334():
 	try:
 		os.system('clear')
