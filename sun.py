@@ -785,15 +785,67 @@ def menu(id):
 		time.sleep(5)
 		login_lagi334()
 	os.system('clear')
-	banner()
-	negara = requests.get("http://ip-api.com/json/").json()["country"]
-	ip = requests.get("http://ip-api.com/json/").json()["query"]
-	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][+[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white]Tanggal  : [bold green]{waktu}[/][/]\n[bold white][+[/][bold white]][/] [bold white]Status   : [bold green]Premium[/][/]\n[bold white][+[/][bold white]][/] [bold white]Versi Sc : [bold green]Update 3.2[/][/] ',width=43,padding=(0,3),style=f"bold white"))
-	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Country  : [bold green]{negara}[/]\n[bold white][+[/][bold white]][/] [bold white]City     : [bold green]{asal_kota}[/]\n[bold white][+[/][bold white]][/] [bold white]Region   : [bold green]{asal_reg}[/][/]\n[bold white][+[/][bold white]][/] [bold white]TimeZone : [bold green]{times}[/][/]\n[bold white][+[/][bold white]][/] [bold white]My Ip    : [bold green]{ip}[/][/] ',width=43,padding=(0,3),style=f"bold white"))
-	console.print(Columns(dia))
-	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Dapunta , Nazri XD And AOREC XD",width=90,title=f"[bold green]Thanks To",padding=(0,5),style=f"bold white"))
-	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Crack From Friends     [bold white][[bold cyan]06[bold white]] Crack From Username[bold white]      [[bold cyan]11[bold white]] Get Headers      \n[bold white][[bold cyan]02[bold white]] Crack From Massal      [bold white][[bold cyan]07[bold white]] Crack From Followers     [[bold cyan]12[bold white]] Spam WhatsApp      \n[bold white][[bold cyan]03[bold white]] Crack From Groups      [[bold cyan]08[bold white]] Crack From Comment       [bold white][[bold cyan]13[bold white]] Spam Sms \n[bold white][[bold cyan]04[bold white]] Crack From Email       [bold white][[bold cyan]09[bold white]] Check Opsi Checkpoint [bold white]   [[bold cyan]14[bold white]] Track Ip \n[bold white][[bold cyan]05[bold white]] Crack From Files       [bold white][[bold cyan]10[bold white]] [bold white]Check Result Crack [bold white]      [[bold cyan]15[bold white]] [bold red]Delete Cookies",width=90,title=f"[bold green]List Menu",style=f"bold white"))
-	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
+	banner()try:cek_data = requests.get("http://ip-api.com/json/").json()
+	except:cek_data = {'-'}
+	try:ipbusuk = cek_data["isp"]
+	except:ipbusuk = {'-'}
+	try:asal_kota = cek_data["city"]
+	except:asal_kota = {'-'}
+	try:asal_reg = cek_data["region"]
+	except:asal_reg = cek_data['-']
+	try:times = cek_data["timezone"]
+	except:times = cek_data['-']
+	try:city = cek_data["city"]
+	except:city = cek_data['-']
+	jam = strftime('%H:%M:%S')
+	ip = requests.get("https://api.ipify.org").text
+	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
+	print('\t\t\t\t       \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AUTHOR\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
+	print('')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mAuthor      : \x1b[1;93mDemias Syihab Aldino \33[m(\x1b[1;92mmaskprivate1457\33[m)')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mGithub      : \x1b[1;93mmaskprivate1457')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mWhatsapp    : \x1b[1;93m089667838732')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mInstagram   : \x1b[1;93mmask_private1457')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mFacebook    : \x1b[1;93mDemias Syihab')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mYoutube     : \x1b[1;93mTutorial Termux & Learn & Tutorial')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mUpdate By   : \x1b[1;93mMuhammad-Basari \33[m(\x1b[1;92mBasari-id\33[m)')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mSource Code : \x1b[1;93mAlvino \33[m(\x1b[1;92mAlvino_Adijaya_Xy\33[m)')
+	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
+	print('\t\t\t\t     \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AKUN ANDA\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
+	print('')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mNama Akun Facebook \x1b[1;92mKamu      : \x1b[1;93m{name}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mIdentitas Diri \33[m(\x1b[1;93mID\33[m) \x1b[1;92mKamu     : \x1b[1;93m{id}')
+	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
+	print('\t\t\t             \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI LOKASI ANDA\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
+	print('')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Internet Protocol Kamu       : {k}{ip}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Negara Kamu        : {k}{negara}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Kota Kamu          : {k}{asal_kota}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Kartu Kamu         : {k}{sim}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Wiayah Kamu        : {k}{asal_reg}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Waktu Saat Ini     : {k}{jam}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>{h}Informasi Tanggal Sekarang   : {k}{hari},{sekarang}')
+	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
+	print('\t\t\t\t        \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI MENU\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
+	print('')
+	cetak(nel('\t\t   [yellow]SALAM PARA HENGKER WIBU MU CRACK COMLI BIAR CROT CROT DAN DIA KOPI UDUT SEMANGAT CRACK'))
+	print('')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m01. Crack Massal \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m02. Crack Publik \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m03. Cek Opsi \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m04. Crack Email \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m05. Crack file\33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m06. Crack Name \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m07. Crack Followers \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m08. Crack Komen \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m09. Crack File Cp \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m10. Hasil Cp \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m11. Headers \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m12. Spam wa \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m13. Spam sms \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m14. lacak ip \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m00. Keluar \33[m( \x1b[1;92mHapus Cookie \33[m) ')
+	_____brayennn__xd_____ = input('\n\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
 	if _____brayennn___xd____ in ['1','01']:
 		brayen_dump()
 	elif _____brayennn___xd____ in ['2','02']:
