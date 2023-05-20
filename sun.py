@@ -499,15 +499,15 @@ def menu(name,id):
 	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t\t        \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI MENU\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m01. Crack Massal \33[m[\x1b[1;92mON\33[m]')
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m02. Crack Publik \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m01. Crack Publik \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m02. Crack Massal \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m03. Cek Opsi \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m04. Crack Email \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m05. Crack file\33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m06. Crack Name \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m07. Crack Followers \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m08. Crack Komen \33[m[\x1b[1;92mON\33[m]')
-	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m09. Crack File Cp \33[m[\x1b[1;92mON\33[m]')
+	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m09. File Cp \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m10. Hasil Cp \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m11. Headers \33[m[\x1b[1;92mON\33[m]')
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m12. Spam wa \33[m[\x1b[1;92mON\33[m]')
@@ -516,7 +516,7 @@ def menu(name,id):
 	print('\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92m00. Keluar \33[m( \x1b[1;92mHapus Cookie \33[m) ')
 	_____demias__syihab_____ = input('\n\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
 	if _____demias__syihab_____ in ['1','01']:
-		dump_publick()
+		brayen_dump()
 	elif _____demias__syihab_____ in ['2','02']:
 		dump_massal()
 	elif _____demias__syihab_____ in ['3','03']:
