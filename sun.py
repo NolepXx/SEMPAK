@@ -895,7 +895,7 @@ def menu(name,id):
 	elif _____demias__syihab_____ in ['2','02']:
 		dump_massal()
 	elif _____demias__syihab_____ in ['3','03']:
-		group()
+		cek_opsi()
 	elif _____demias__syihab_____ in ['4','04']:
 		crack_email()
 	elif _____demias__syihab_____ in ['5','05']:
