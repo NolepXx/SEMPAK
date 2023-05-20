@@ -361,7 +361,7 @@ ____¶¶¶¶¶¶¶¶¶¶¶_____¶¶¶¶¶¶¶¶¶¶______¶¶¶¶¶¶¶¶¶_____
 _____¶¶¶¶¶¶¶¶¶________¶¶¶¶¶¶__________¶¶¶¶¶_______
              """,width=100,padding=(0,8),title=f"Banner",style=f"bold white"))
 ###----------[ menu login]----------###
-def logi123()
+def logi123():
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
