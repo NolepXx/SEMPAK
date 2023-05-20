@@ -383,7 +383,6 @@ for xd in range(10000):
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
 
-
 	aa='Mozilla/5.0 (Linux; U; Android 10; id-id; Redmi 9A Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36'
 	b=random.choice(['6','7','8','9','10','11','12'])
 	c='id-id;'
@@ -398,7 +397,6 @@ for xd in range(10000):
 	l='Mobile Safari/537.36'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
-	
 	
 	aa='Mozilla/5.0 (Linux; Android 5.1.1;'
 	b=random.choice(['6','7','8','9','10','11','12'])
@@ -415,7 +413,7 @@ for xd in range(10000):
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 	
-for x in range(10):
+for x in range(1000):
 	a='Mozilla/5.0 (Linux; Android 8.1.0; CPH1851) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.73 Mobile Safari/537.36'
 	b=random.randrange(100, 9999)
 	c=random.randrange(100, 9999)
@@ -428,8 +426,8 @@ for x in range(10):
 	j=random.randrange(1, 9)
 	k=random.randrange(1, 9)
 	l='Mobile Safari/537.36'
-	ugen=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
-	
+	uaku2=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
+	ugen.append(uaku2)
 ### --------- [ User Agent By Denventa ] --------- ###	
 for xd in range(10000):
 	a=random.choice(['1','1.0','1.5','2','2.0','2.5','3','3.0','3.5','4','4.0','4.5','5','5.0','5.5','6','6.0','6.5','7','7.0','7.5','8','8.0','8.5','9','9.0','9.5','10','10.0','10.5','11','11.0','11.5','12','12.0','12.5','13'])
