@@ -604,7 +604,8 @@ for xd in range(10000) :
 	uga=f'{a} {b}; {c} {d}) {e}{f} {g}'
 	ugen.append(uga)
 	
-def uaku():try:
+def uaku():
+	try:
 		ua=open('bbnew.txt','r').read().splitlines()
 		for ub in ua:
 			ugen.append(ub)
