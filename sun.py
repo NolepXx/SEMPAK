@@ -367,7 +367,7 @@ def login123():
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Login Menggunakan Cookie [[bold green] ON [bold white]][/]\n[bold white][bold white][[bold green]00[/][bold white]][/] [bold red]Keluar Dari Script [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]Pilihan Login",style=f"bold white"))
 	bryn = input(f' ╰─  Pilih Menu : ')
 	if bryn in ['1','01']:
-		login()
+		login_menu()
 	elif bryn in ['0','00']:
 		exit()
 	else:
@@ -395,7 +395,7 @@ def login():
 	except IOError:
 		login123()
 		
-def login_lagi334():
+def login_menu():
 	try:
 		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
 		your_cookies = input(' ╰─  Masukan Cookie : ')
