@@ -54,25 +54,10 @@ def jalan(z):
 		sys.stdout.write(e)
 		sys.stdout.flush()
 		time.sleep(0.05)
-###----------[ GLOBAL NAME ]---------- ###
-ses = requests.Session()
-reset = "[/]"
-IP = requests.get("http://ip-api.com/json/").json()["query"]
-negara = requests.get("http://ip-api.com/json/").json()["country"]
-datt = []
-sim = requests.get("http://ip-api.com/json/").json()["isp"]
-pretty.install()
-CON=sol()
-taplikasi=[]
-gabriel=[]
-ugen=[]
-ugen2=[]
-uakuh=[]
-console = Console()
-ses=requests.Session()
-id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[],[],[],[],[],[]
-ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[],[]
-sys.stdout.write('\x1b]2; BMBF | BrayennnXD Multi Brute Facebook\x07')
+		#------------[ INDICATION ]---------------#
+id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
+cokbrut=[]
+pwpluss,pwnya=[],[]
 #------------------[ USER-AGENT ]-------------------#
 try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
@@ -80,18 +65,13 @@ try:
 except Exception as e:
 	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD')
 prox=open('.prox.txt','r').read().splitlines()
-###----------[ APPEND ]---------- ###
-mytok = []
-ugent = []
-ugen = []
-usam = []
-uakuh2=[]
-ugen2 = []
-usam=[]
-uakuh = []
-uga=[]
-usragent = []
-uaku2 = []
+###----------[ GLOBAL NAME ]---------- ###
+ses = requests.Session()
+reset = "[/]"
+IP = requests.get("http://ip-api.com/json/").json()["query"]
+negara = requests.get("http://ip-api.com/json/").json()["country"]
+datt = []
+sim = requests.get("http://ip-api.com/json/").json()["isp"]
 ###----------[ GENERATE USERAGENT ]---------- ###
 for xd in range(10000) :
 	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
@@ -842,7 +822,7 @@ def menu(id):
 	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t\t     \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AKUN ANDA\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
-	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mNama Akun Facebook \x1b[1;92mKamu      : \x1b[1;93m{name}')
+	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mNama Akun Facebook \x1b[1;92mKamu      : \x1b[1;93m{Name}')
 	print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mIdentitas Diri \33[m(\x1b[1;93mID\33[m) \x1b[1;92mKamu     : \x1b[1;93m{id}')
 	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t             \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI LOKASI ANDA\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
