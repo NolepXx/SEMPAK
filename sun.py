@@ -454,7 +454,6 @@ def menu(id):
 		os.system('rm -rf .token.txt && rm -rf .cok.txt')
 		os.system('rm -rf .tokeneakun.txt && rm -rf .cookiesakun.txt')
 		baz_anim(f'└──{mer} cookies telah kadaluarsa ster')
-		waktu(1)
 		login_men()
 	os.system('clear')
 	waktu(1)
