@@ -369,7 +369,7 @@ for xd in range(10000):
 	d=random.randrange(4200,4900)
 	e=random.randrange(40,150)
 	uaku=f'Mozilla/5.0 (Linux; Android {a}; SAMSUNG SM-A305FN) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	ugen2.append(uaku)
+	ugen.append(uaku)
 
 for t in range(10000):
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
@@ -405,7 +405,7 @@ for xd in range(10000):
 	j=random.randrange(1, 4)
 	k='Mobile UNTRUSTED/1.0'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	ugen2.append(uaku)
+	ugen.append(uaku)
 
 	aa='Mozilla/5.0 (Linux; U; Android 10; id-id; Redmi 9A Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36'
 	b=random.choice(['6','7','8','9','10','11','12'])
@@ -435,7 +435,7 @@ for xd in range(10000):
 	k=random.randrange(40,150)
 	l='Safari/537.36'
 	uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	ugen2.append(uaku)
+	ugen.append(uaku)
 	
 for x in range(1000):
 	a='Mozilla/5.0 (Linux; Android 8.1.0; CPH1851) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.73 Mobile Safari/537.36'
@@ -451,7 +451,7 @@ for x in range(1000):
 	k=random.randrange(1, 9)
 	l='Mobile Safari/537.36'
 	uakuh=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
-	ugen2.append(uakuh)
+	ugen.append(uakuh)
 ### --------- [ User Agent By Denventa ] --------- ###	
 for xd in range(10000):
 	a=random.choice(['1','1.0','1.5','2','2.0','2.5','3','3.0','3.5','4','4.0','4.5','5','5.0','5.5','6','6.0','6.5','7','7.0','7.5','8','8.0','8.5','9','9.0','9.5','10','10.0','10.5','11','11.0','11.5','12','12.0','12.5','13'])
@@ -641,12 +641,12 @@ for xd in range(10000) :
 	ugen2.append(uga)
 	
 def uaku():
-try:
-	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('socksku.txt','w').write(proxylist)
+	try:
+	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4&timeout=10000&country=all').text
+	open('SOCKS4_RAW.txt','w').write(proxylist)
 except Exception as e:
-	baz_anim(f'gagal ster :(')
-proxsi=open('socksku.txt','r').read().splitlines()
+	bra_anim(f'gagal ster :(')
+proxsi=open('SOCKS4_RAW.txt','r').read().splitlines()
 		#------------[ INDICATION ]---------------#
 P = '\x1b[1;97m' # PUTIH
 M = '\x1b[1;91m' # MERAH
