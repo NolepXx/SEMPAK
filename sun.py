@@ -845,17 +845,41 @@ def menu(name,id):
 	except:city = cek_data['-']
 	jam = strftime('%H:%M:%S')
 	ip = requests.get("https://api.ipify.org").text
-print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
+print('\def menu(name,id):
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		print('[×] Cookies Kadaluarsa ')
+		time.sleep(5)
+		login_lagi334()
+	os.system('clear')
+	banner()
+	try:cek_data = requests.get("http://ip-api.com/json/").json()
+	except:cek_data = {'-'}
+	try:ipbusuk = cek_data["isp"]
+	except:ipbusuk = {'-'}
+	try:asal_kota = cek_data["city"]
+	except:asal_kota = {'-'}
+	try:asal_reg = cek_data["region"]
+	except:asal_reg = cek_data['-']
+	try:times = cek_data["timezone"]
+	except:times = cek_data['-']
+	try:city = cek_data["city"]
+	except:city = cek_data['-']
+	jam = strftime('%H:%M:%S')
+	ip = requests.get("https://api.ipify.org").text
+	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t\t       \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AUTHOR\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
 	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mAuthor      : \x1b[1;93mDemias Syihab Aldino \33[m(\x1b[1;92mmaskprivate1457\33[m)')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mGithub      : \x1b[1;93mNolepXx')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mGithub      : \x1b[1;93mmaskprivate1457')
 	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mWhatsapp    : \x1b[1;93m089667838732')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mInstagram   : \x1b[1;93mJANDA-HERANG/JAHE')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mFacebook    : \x1b[1;93mNoleXxxx')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mYoutube     : \x1b[1;93mJANDA+HERANG')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mUpdate By   : \x1b[1;93mNolepXx \33[m(\x1b[1;92mBasari-id\33[m)')
-	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mSource Code : \x1b[1;93mAlvino \33[m(\x1b[1;92mDemias/XzonXD/BrayennnXD\33[m)')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mInstagram   : \x1b[1;93mmask_private1457')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mFacebook    : \x1b[1;93mDemias Syihab')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mYoutube     : \x1b[1;93mTutorial Termux & Learn & Tutorial')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mUpdate By   : \x1b[1;93mMuhammad-Basari \33[m(\x1b[1;92mBasari-id\33[m)')
+	print('\x1b[1;93m[\x1b[1;92m▪︎\x1b[1;93m] \x1b[1;92mSource Code : \x1b[1;93mAlvino \33[m(\x1b[1;92mAlvino_Adijaya_Xy\33[m)')
 	print('\x1b[1;92m<--------------------------------------------------------------------------------------------------->')
 	print('\t\t\t\t     \x1b[1;92m▪︎\x1b[1;93m▪︎\x1b[1;91m▪︎\x1b[1;92mINFORMASI AKUN ANDA\x1b[1;91m▪︎\x1b[1;93m▪︎\x1b[1;92m▪︎')
 	print('')
