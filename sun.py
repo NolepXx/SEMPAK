@@ -361,7 +361,23 @@ ____¶¶¶¶¶¶¶¶¶¶¶_____¶¶¶¶¶¶¶¶¶¶______¶¶¶¶¶¶¶¶¶_____
 _____¶¶¶¶¶¶¶¶¶________¶¶¶¶¶¶__________¶¶¶¶¶_______
              """,width=100,padding=(0,8),title=f"Banner",style=f"bold white"))
 ###----------[ menu login]----------###
-def logi123():
+def login123():
+	os.system('clear')
+	banner()
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Login Menggunakan Cookie [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Menu Crack Tanpa Login [[bold green] ON [bold white]][/]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Keluar Dari Script [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]Pilihan Login",style=f"bold white"))
+	bryn = input(f' ╰─  Pilih Menu : ')
+	if bryn in ['1','01']:
+		login()
+	elif bryn in ['2','02']:
+		lainnya()
+	elif bryn in ['0','00']:
+		exit()
+	else:
+		print(' ╰─  Pilih Yang Bener Asu ')
+		time.sleep(5)
+		back()
+		
+def login():
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
@@ -439,17 +455,16 @@ def login_lagi334():
 				time.sleep(3)
 				back()
 	except:pass
-	        
-#------------------[ BAGIAN-MENU ]----------------#
+	#------------------[ BAGIAN-MENU ]----------------#
 def menu(my_name,my_id):
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		print(' ╰─  Cookies Kadaluarsa ')
+		print(' [+] Cookies Kadaluarsa ')
 		time.sleep(5)
 		login()
-	os.system('clear') 
+	os.system('clear')
 	banner()
 	try:cek_data = requests.get("http://ip-api.com/json/").json()
 	except:cek_data = {'-'}
