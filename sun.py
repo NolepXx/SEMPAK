@@ -1289,7 +1289,7 @@ def passwrd():
 	print('')
 	cetak(nel('\t[cyan]>>[green] Crack Selesai Ngab, Jangan Lupa Bersyukur[cyan] <<[white] '))
 	print(f'[{b}•{x}]{h} OK : {h}%s '%(ok))
-	print(f'{x}[{b}•{x}]{k} CP : {k}%s{x} '%(cp))
+	print(f'{x}[{b}•{x}]{k} CP : {k}%s{x} '%(cpc))
 	print('')
 	print('>> Lanjut Crack Kembali ( Y/t ) ? ')
 	woi = input('>> Pilih : ')
