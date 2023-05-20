@@ -659,23 +659,14 @@ u = '\033[95m' # UNGU
 kk = '\033[33m' # KUNING -
 b = '\33[1;96m' # BIRU -
 p = '\x1b[0;34m' # BIRU +
-asu = random.choice([m,k,h,u,b])
-try:cek_data = requests.get("http://ip-api.com/json/").json()
-except:cek_data = {'-'}
-try:asal_kota = cek_data["city"]
-except:asal_kota = {'-'}
-try:asal_reg = cek_data["region"]
-except:asal_reg = cek_data['-']
-try:times = cek_data["timezone"]
-except:times = cek_data['-']
-try:city = cek_data["city"]
-except:city = cek_data['-']
-#--------------------[ CONVERTER-BULAN ]--------------#
-dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
-dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'Devember'}
-tgl = datetime.datetime.now().day
-bln = dic[(str(datetime.datetime.now().month))]
-thn = datetime.datetime.now().year
+	#--------------------[ CONVERTER-BULAN ]--------------#
+bulan = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10': 'October', '11': 'November', '12': 'December'}
+tgl = datetime.now().day
+bln = bulan[(str(datetime.now().month))]
+thn = datetime.now().year
+tanggal = (str(tgl)+' '+str(bln)+' '+str(thn))
+hari = datetime.now().strftime("%A")
+sekarang = ''+str(tgl)+'-'+str(bln)+'-'+str(thn)
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 #------------------[ MACHINE-SUPPORT ]---------------#
