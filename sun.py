@@ -381,6 +381,60 @@ u = '\033[95m' # UNGU
 kk = '\033[33m' # KUNING -
 b = '\33[1;96m' # BIRU -
 p = '\x1b[0;34m' # BIRU +
+###----------[ ANSII COLOR STYLE ]---------- ###
+Z = "\x1b[0;90m"     # Hitam
+M = "\x1b[38;5;196m" # Merah
+H = "\x1b[38;5;46m"  # Hijau
+K = "\x1b[38;5;226m" # Kuning
+B = "\x1b[38;5;44m"  # Biru
+U = "\x1b[0;95m"     # Ungu
+O = "\x1b[0;96m"     # Biru Muda
+P = "\x1b[38;5;231m" # Putih
+J = "\x1b[38;5;208m" # Jingga
+A = "\x1b[38;5;248m" # Abu-Abu
+N = '\x1b[0m'	# WARNA MATI
+PT = '\x1b[1;97m' # PUTIH TEBAL
+MT = '\x1b[1;91m' # MERAH TEBAL
+HT = '\x1b[1;92m' # HIJAU TEBAL
+KT = '\x1b[1;93m' # KUNING TEBAL
+BT = '\x1b[1;94m' # BIRU TEBAL
+UT = '\x1b[1;95m' # UNGU TEBAL
+OT = '\x1b[1;96m' # BIRU MUDA TEBAL
+
+###----------[ RICH COLOR STYLE ]---------- ###
+Z2 = "[#000000]" # HITAM
+M2 = "[#FF0000]" # MERAH
+H2 = "[#00FF00]" # HIJAU
+K2 = "[#FFFF00]" # KUNING
+B2 = "[#00C8FF]" # BIRU
+U2 = "[#AF00FF]" # UNGU
+N2 = "[#FF00FF]" # PINK
+O2 = "[#00FFFF]" # BIRU MUDA
+P2 = "[#FFFFFF]" # PUTIH
+J2 = "[#FF8F00]" # JINGGA
+A2 = "[#AAAAAA]" # ABU-ABU
+
+#------------[ WARNA-COLOR ]--------------#
+P = '\x1b[1;97m'
+M = '\x1b[1;91m'
+H = '\x1b[1;92m'
+K = '\x1b[1;93m'
+B = '\x1b[1;94m'
+U = '\x1b[1;95m' 
+O = '\x1b[1;96m'
+N = '\x1b[0m'    
+Z = "\033[1;30m"
+sir = '\033[41m\x1b[1;97m'
+x = '\33[m' # DEFAULT
+m = '\x1b[1;91m' #RED +
+k = '\033[93m' # KUNING +
+h = '\x1b[1;92m' # HIJAU +
+hh = '\033[32m' # HIJAU -
+u = '\033[95m' # UNGU
+kk = '\033[33m' # KUNING -
+b = '\33[1;96m' # BIRU -
+p = '\x1b[0;34m' # BIRU +
+asu = random.choice([m,k,h,u,b])
 	#--------------------[ CONVERTER-BULAN ]--------------#
 bulan = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10': 'October', '11': 'November', '12': 'December'}
 tgl = datetime.now().day
@@ -400,7 +454,8 @@ def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	print(f"""[P]   
+	print()
+	alvino_xy(f'''\t{asu}
 	𝕹𝕺𝕷𝕰𝕻 𝖃𝖃                                  .-=-.                                  
                                  .--==.           .*:..=     .-:                          
                                 :-.  .+           .=-  -     -.-                          
@@ -454,8 +509,8 @@ def banner():
                                         ...  ....                                                                                 
 
 
-             m}▪︎{k}▪︎{h}▪︎{sir} XCINAMOL XCODE TEAM BRUDAS COMLI {x}{m}▪︎{k}▪︎{h}▪︎{x}
-	     """)
+             {m}▪︎{k}▪︎{h}▪︎{sir} XCINAMOL XCODE TEAM BRUDAS COMLI {x}{m}▪︎{k}▪︎{h}▪︎{x}
+	     ''')
 ###----------[ menu login]----------###
 def login123():
 	os.system('clear')
