@@ -455,7 +455,7 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	clear()
-	print(lvino_xy(f'''\t{asu}
+	print(alvino_xy(f'''\t{asu}
 	𝕹𝕺𝕷𝕰𝕻 𝖃𝖃                                  .-=-.                                  
                                  .--==.           .*:..=     .-:                          
                                 :-.  .+           .=-  -     -.-                          
