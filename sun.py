@@ -454,7 +454,8 @@ def banner():
                                         ...  ....                                                                                 
 
 
-             m}▪︎{k}▪︎{h}▪︎{sir} XCINAMOL XCODE TEAM BRUDAS COMLI {x}{m}▪︎{k}▪︎{h}▪︎{x}''')
+             m}▪︎{k}▪︎{h}▪︎{sir} XCINAMOL XCODE TEAM BRUDAS COMLI {x}{m}▪︎{k}▪︎{h}▪︎{x}
+	     """)
 ###----------[ menu login]----------###
 def login123():
 	os.system('clear')
