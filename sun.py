@@ -1384,33 +1384,47 @@ def setting():
 	else:
 		method.append('mbasic')
 	print('')
-	_jembot_ = input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mTambahkan Aplikasi Terkait ? \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mt \33[m) ')
-	if _jembot_ in ['']:
-		print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih Yang Bener Kak ! ')
-		back()
-	elif _jembot_ in ['y','Y']:
-		taplikasi.append('ya')
-	else:
-		taplikasi.append('no')
-	pwplus=input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mTambahkan Password Manual ? \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mt \33[m) ')
-	if pwplus in ['y','Y']:
+	cetak(panel('''[bold white][[bold cyan]01[bold white]] [bold white]Menggunakan Password V1 [[bold green]Recommended[bold white]]
+[bold white][[bold cyan]02[bold white]] [bold white]Menggunakan Password V2 [[bold green]Very Recommended[bold white]]
+[bold white][[bold cyan]03[bold white]] [bold white]Menggunakan Password Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',padding=(0,8),width=90))
+	pwplus=input(f' [+] {P}Pilih Sandi : ')
+	if pwplus in ['03','3']:
 		pwpluss.append('ya')
-		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
-		pwku=input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMasukkan Password Tambahan : ')
+		pwku=input(f' [+] {P}Sandi : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
 	else:
 		pwpluss.append('no')
-		
-	print(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mApakah Anda Ingin Mengunakan User-Agent Manual ? \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mT \33[m)')
-	uatambah = input(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
-	if uatambah in ['y','Ya','ya','Y']:
-		ualuh.append('ya')
-		bzer = input(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMasukan User-Agent > \x1b[1;93m')
-		uaku2.append(bzer)
+	
+	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Setting Cek Apk",style=f"bold white"))
+	_brayen_ = input(' [+] Pilih : ')
+	if _brayen_ in ['']:
+		print(' [+] Pilih Yang Bener Kontol ')
+		exit()
+	elif _brayen_ in ['y','Y']:
+		taplikasi.append('ya')
 	else:
-		uaku2.append('tidak')
+		taplikasi.append('no')
+		
+	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Opsi Checkpoint Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Cek Opsi",style=f"bold white"))
+	_brayen_ = input(' [+] Pilih : ')
+	if _brayen_ in ['']:
+		print(' [+] Pilih Yang Bener Kontol ')
+		exit()
+	elif _brayen_ in ['y','Y']:
+		gabriel.append('ya')
+	else:
+		gabriel.append('no')
+	
+	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
+	uatambah = input(f' [+] Pilih : ')
+	if uatambah in ['y','Ya','ya','Y']:
+		uaku.append('ya')
+		bzer = input(f' [+] Masukan User-Agent : ')
+		uaku.append(bzer)
+	else:
+		uaku.append('tidak')
 	passwrd()
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
@@ -1470,48 +1484,16 @@ def passwrd():
 			else:
 				pool.submit(crack,idf,pwv)
 	print('')
-	cetak(panel('''[bold white][[bold cyan]01[bold white]] [bold white]Menggunakan Password V1 [[bold green]Recommended[bold white]]
-[bold white][[bold cyan]02[bold white]] [bold white]Menggunakan Password V2 [[bold green]Very Recommended[bold white]]
-[bold white][[bold cyan]03[bold white]] [bold white]Menggunakan Password Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',padding=(0,8),width=90))
-	pwplus=input(f' [+] {P}Pilih Sandi : ')
-	if pwplus in ['03','3']:
-		pwpluss.append('ya')
-		pwku=input(f' [+] {P}Sandi : ')
-		pwkuh=pwku.split(',')
-		for xpw in pwkuh:
-			pwnya.append(xpw)
+	print(f'{x}[{b}•{x}]{k} CP : {k}%s{x} '%(cp))
+	print('')
+	print('>> Lanjut Crack Kembali ( Y/t ) ? ')
+	woi = input('>> Pilih : ')
+	if woi in ['y','Y']:
+		back()
 	else:
-		pwpluss.append('no')
-	
-	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Setting Cek Apk",style=f"bold white"))
-	_brayen_ = input(' [+] Pilih : ')
-	if _brayen_ in ['']:
-		print(' [+] Pilih Yang Bener Kontol ')
+		print(f'\t{x}>>{k} Good Bye Dadaahh{x} << ')
+		time.sleep(2)
 		exit()
-	elif _brayen_ in ['y','Y']:
-		taplikasi.append('ya')
-	else:
-		taplikasi.append('no')
-		
-	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Opsi Checkpoint Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Cek Opsi",style=f"bold white"))
-	_brayen_ = input(' [+] Pilih : ')
-	if _brayen_ in ['']:
-		print(' [+] Pilih Yang Bener Kontol ')
-		exit()
-	elif _brayen_ in ['y','Y']:
-		gabriel.append('ya')
-	else:
-		gabriel.append('no')
-	
-	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
-	uatambah = input(f' [+] Pilih : ')
-	if uatambah in ['y','Ya','ya','Y']:
-		uaku.append('ya')
-		bzer = input(f' [+] Masukan User-Agent : ')
-		uaku.append(bzer)
-	else:
-		uaku.append('tidak')
-	passwrd()
 #--------------------[ METODE-B-API ]-----------------#
 def crack(idf,pwv):
 	global loop,ok,cp
