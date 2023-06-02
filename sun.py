@@ -1439,8 +1439,7 @@ def passwrd():
 				if len(frs)<3:
 					pass
 				else:
-					pwv.append(nmf)
-pwv.append(nmf)
+						pwv.append(nmf)
 						pwv.append(frs+'1')
 						pwv.append(frs+'2')
 						pwv.append(frs+'3')
@@ -1518,11 +1517,11 @@ pwv.append(nmf)
 	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
 	uatambah = input(f' [+] Pilih : ')
 	if uatambah in ['y','Ya','ya','Y']:
-		uaku2.append('ya')
+		uaku.append('ya')
 		bzer = input(f' [+] Masukan User-Agent : ')
-		uaku2.append(bzer)
+		uaku.append(bzer)
 	else:
-		uaku2.append('tidak')
+		uaku.append('tidak')
 	passwrd()
 #--------------------[ METODE-B-API ]-----------------#
 def crack(idf,pwv):
