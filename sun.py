@@ -1438,7 +1438,7 @@ def passwrd():
 			if len(nmf)<6:
 				if len(frs)<3:
 					pass
-				else:
+					else:
 						pwv.append(nmf)
 						pwv.append(frs+'1')
 						pwv.append(frs+'2')
@@ -1455,7 +1455,7 @@ def passwrd():
 						pwv.append(frs+'09')
 						pwv.append(frs+'12')
 						pwv.append(frs+'321')
-				else:
+					else:
 					if len(frs)<3:
 						pwv.append(nmf)
 					else:
@@ -1466,9 +1466,9 @@ def passwrd():
 						pwv.append(frs+'1234')
 						pwv.append(frs+'12345')
 						pwv.append(frs+'123456')
-			if 'ya' in pwpluss:
-				for xpwd in pwnya:
-					pwv.append(xpwd)
+				if 'ya' in pwpluss: 
+					for xpwd in pwnya:
+						pwv.append(xpwd)
 			else:pass
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
