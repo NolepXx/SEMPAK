@@ -1422,9 +1422,19 @@ def setting():
 	if uatambah in ['y','Ya','ya','Y']:
 		uaku.append('ya')
 		bzer = input(f' [+] Masukan User-Agent : ')
-		uaku.append(bzer)
+		uakuh.append(bzer)
 	else:
-		uaku.append('tidak')
+		uakuh.append('tidak')
+		
+	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
+	pwplus = input(f' [+] Pilih : ')
+	if pwplus in ['y','Ya','ya','Y']:
+		pwplus.append('ya')
+		bzer = input(f' [+] Masukan User-Agent : ')
+		pwplus.append(xpwd)
+	else:
+		pwplus.append('tidak')
+		
 	passwrd()
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
