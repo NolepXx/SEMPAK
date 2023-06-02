@@ -1367,10 +1367,15 @@ def setting():
 	else:
 		print('>> Pilih Yang Bener Kontooll ')
 		exit()
-	print('>> 1. Mobile ')
-	print('>> 2. Mbasic ')
-	print('>> 3. Touch  ')
-	print('>> 4. Mtouch ')
+	print('>> 1. MOBILE ')
+	print('>> 2. MBASIC ')
+	print('>> 3. TOUCH  ')
+	print('>> 4. M.TOUCH ')
+	print('>> 5. ASYNC')
+	print('>> 6. ALPHA ')
+	print('>> 7. VALIDATE ')
+	print('>> 8. REGULER ')
+	print('>> 9. XXMOBILE ')
 	print('')
 	hc = input('>> Pilih : ')
 	if hc in ['1','01']:
@@ -1381,6 +1386,16 @@ def setting():
 		method.append('touch')
 	elif hc in ['4','04']:
 		method.append('mbasic')
+	elif hc in ['5','05']:
+		method.append('kontol')
+	elif hc in ['6','06']:
+		method.append('bapi')
+	elif hc in ['7','07']:
+		method.append('validate1')
+	elif hc in ['8','08']:
+		method.append('reguler1')
+	elif hc in ['9','09']:
+		method.append('colmek1')
 	else:
 		method.append('mbasic')
 	print('')
@@ -1492,6 +1507,16 @@ def passwrd():
 				pool.submit(cracktouch,idf,pwv)
 			elif 'mbasic' in method:
 				pool.submit(crackmbasic,idf,pwv)
+			elif 'kontol' in method:
+				pool.submit(kontol,idf,pwv)
+			elif 'bapi' in method:
+				pool.submit(bapi,idf,pwv)
+			elif 'colmek1' in method:
+				pool.submit(colmek1,idf,pwv)
+			elif 'validate1' in method:
+				pool.submit(validate1,idf,pwv)
+			elif 'reguler1' in method:
+				pool.submit(reguler1,idf,pwv)
 			else:
 				pool.submit(crack,idf,pwv)
 	print('')
