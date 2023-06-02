@@ -1420,11 +1420,11 @@ def setting():
 	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
 	uatambah = input(f' [+] Pilih : ')
 	if uatambah in ['y','Ya','ya','Y']:
-		uaku.append('ya')
+		ualuh.append('ya')
 		bzer = input(f' [+] Masukan User-Agent : ')
-		uaku.append(bzer)
+		ualu.append(bzer)
 	else:
-		uaku.append('tidak')
+		ualuh.append('tidak')
 		
 	cetak(panel(f'[bold white]Apakah Anda Ingin Menambahkan Pass ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
 	pwplus = input(f' [+] Pilih : ')
