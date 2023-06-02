@@ -120,8 +120,8 @@ for t in range(10000):
 	uakuh = random.choice([_1,_2,_3,_4,_5,_6,_7,_8,_9,_10])
 	ugen2.append(uakuh)
 	
-	###----------[ GENERATE USERAGENT ]---------- ###
-	try:
+###----------[ GENERATE USERAGENT ]---------- ###
+try:
 	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
 	open('pxy.txt','w').write(proxylist)
 except Exception as e:
