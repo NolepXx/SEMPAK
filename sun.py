@@ -1426,7 +1426,7 @@ def setting():
 	else:
 		uakuh.append('tidak')
 		
-	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
+	cetak(panel(f'[bold white]Apakah Anda Ingin Menambahkan Pass ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
 	pwplus = input(f' [+] Pilih : ')
 	if pwplus in ['y','Ya','ya','Y']:
 		pwplus.append('ya')
