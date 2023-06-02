@@ -528,7 +528,7 @@ def banner():
 |__/  |__/|__/  |__/|__/     |__/    |__/                                                      
                                                                                                                           
              {m}▪︎{k}▪︎{h}▪︎{sir} XCINAMOL XCODE TEAM BRUDAS COMLI {x}{m}▪︎{k}▪︎{h}▪︎{x}
-	     '''))
+	     """,width=100,padding=(0,4),title=f"NOLEPXX XX",style=f"bold white"))
 ###----------[ menu login]----------###
 def login123():
 	os.system('clear')
