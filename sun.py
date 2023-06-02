@@ -121,6 +121,13 @@ for t in range(10000):
 	ugen2.append(uakuh)
 	
 	###----------[ GENERATE USERAGENT ]---------- ###
+	try:
+	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
+	open('pxy.txt','w').write(proxylist)
+except Exception as e:
+	print(f'Nyalain data Suhu')
+prox=open('pxy.txt','r').read().splitlines()
+limitd=0
 for xd in range(10000) :
 	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
 	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
@@ -346,12 +353,6 @@ for xd in range(10000):
 	g='Mobile Safari/537.36'
 	uga=f'{a} {b}; {c} {d}) {e}{f} {g}'
 	ugen.append(uga)
-try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=10000&country=all&ssl=all&anonymity=all').text
-	open('prox.txt','w').write(prox)
-except Exception as e:
-	print(f'gagal ster :(')
-prox=open('prox.txt','r').read().splitlines()
 #------------[ INDICATION ]---------------#
 P = '\x1b[1;97m' # PUTIH
 M = '\x1b[1;91m' # MERAH
