@@ -1426,15 +1426,16 @@ def setting():
 	else:
 		ualuh.append('tidak')
 		
-	cetak(panel(f'[bold white]Apakah Anda Ingin Menambahkan Pass ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
-	pwplus = input(f' [+] Pilih : ')
-	if pwplus in ['y','Ya','ya','Y']:
-		pwplus.append('ya')
-		bzer = input(f' [+] Masukan User-Agent : ')
-		pwplus.append(xpwd)
+		pwplus=input('>> Tambahkan Password Manual ( Y/t ) ')
+	if pwplus in ['y','Y']:
+		pwpluss.append('ya')
+		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
+		pwku=input('>> Masukkan Password Tambahan : ')
+		pwkuh=pwku.split(',')
+		for xpw in pwkuh:
+			pwnya.append(xpw)
 	else:
-		pwplus.append('tidak')
-		
+		pwpluss.append('no')
 	passwrd()
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
