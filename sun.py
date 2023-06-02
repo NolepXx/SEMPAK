@@ -1422,9 +1422,9 @@ def setting():
 	if uatambah in ['y','Ya','ya','Y']:
 		uaku.append('ya')
 		bzer = input(f' [+] Masukan User-Agent : ')
-		uakuh.append(bzer)
+		uaku.append(bzer)
 	else:
-		uakuh.append('tidak')
+		uaku.append('tidak')
 		
 	cetak(panel(f'[bold white]Apakah Anda Ingin Menambahkan Pass ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
 	pwplus = input(f' [+] Pilih : ')
