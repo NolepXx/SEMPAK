@@ -1457,8 +1457,8 @@ def setting():
 def passwrd():
 	print(f'>>>>> {m}•{k}•{h}•{x} Sedang Menggeser Matahari {m}•{k}•{h}•{x} <<<<< ')
 	print('')
-	print(f'>> Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(ok))
-	print(f'>> Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cp))
+	print(f'>> Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
+	print(f'>> Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
 	print(f'>> Mainkan Mode Pesawat Setiap {m}1k{x} Idz\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
