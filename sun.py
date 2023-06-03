@@ -1367,6 +1367,7 @@ def setting():
 	else:
 		print('>> Pilih Yang Bener Kontooll ')
 		exit()
+	print('')
 	print('>> 1. MOBILE ')
 	print('>> 2. MBASIC ')
 	print('>> 3. TOUCH  ')
