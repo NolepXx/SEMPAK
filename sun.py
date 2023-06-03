@@ -1397,7 +1397,7 @@ def setting():
 	elif hc in ['9','09']:
 		method.append('colmek1')
 	else:
-		method.append('mbasic')
+		method.append('mobile')
 	print('')
 	cetak(panel('''[bold white][[bold cyan]01[bold white]] [bold white]Menggunakan Password V1 [[bold green]Recommended[bold white]]
 [bold white][[bold cyan]02[bold white]] [bold white]Menggunakan Password V2 [[bold green]Very Recommended[bold white]]
