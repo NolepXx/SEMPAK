@@ -81,10 +81,10 @@ sim = requests.get("http://ip-api.com/json/").json()["isp"]
 ###----------[ GENERATE USERAGENT ]---------- ###
 try:
 	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('.proxy.txt','w').write(proxylist)
+	open('.prox.txt','w').write(proxylist)
 except Exception as e:
 	print(f'Nyalain data Suhu')
-prox=open('.proxy.txt','r').read().splitlines()
+prox=open('.prox.txt','r').read().splitlines()
 limitd=0
 for xd in range(10000) :
 	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
